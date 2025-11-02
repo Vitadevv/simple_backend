@@ -1,0 +1,13 @@
+from ..entities.entities import Entity 
+
+
+def take_turn(player: Entity, enemy: Entity):
+"""Executes only 1 turn. Useful for debugging and may be a useful helper function"""
+
+def fight_to_death(player: Entity, enemy: Entity) -> dict:
+  turns = 0
+  log = []
+  while player.hp > 0 and enemy.hp > 0:
+  
+  
+    turns += 1
