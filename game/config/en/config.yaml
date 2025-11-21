@@ -223,5 +223,12 @@ menu:
     settings: "[3] - SETTINGS"
     exit: "[4] - EXIT"
   
+  description: "Welcome to Dungeon Master! This is a simple crawler game where you navigate through floors filled with enemies, traps, and treasures. Choose your path wisely and try to reach the highest floor possible!  Good luck, adventurer!"
+  under_development: "This feature is under development. Please check back later!"
+  exiting: "Exiting the game. Goodbye!"
+  invalid_option: "Invalid option. Please choose a valid option (0-4)."
+
+  choose_option: "Choose an option (0-4): "
+  choose_path: "Choose your path (1-3): "
   end_game: "GAME OVER"
   new_record: "NEW RECORD!"
