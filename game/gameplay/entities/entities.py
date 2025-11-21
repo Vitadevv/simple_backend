@@ -4,17 +4,24 @@ import logging
 log = logging.getLogger(__name__)
 
 class Entity:
-  def __init__(self, name: str, hp = 100, attack = 10, speed = 10):
+  def __init__(self, name: str, hp: int | float = 100, attack: int | float = 10, speed: int | float = 10):
     self.name = name
     self.hp = hp
     self.attack = attack 
     self.speed = speed
     
+    
   def is_alive(self) -> bool:
     return self.hp > 0
   
-  def take_damage(self, damage: float) -> None:
+  
+  def take_damage(self, damage: int | float) -> None:
     self.hp = max(0, (self.hp - damage))
+    
+    
+  def heal(self, value: int | float) -> None:
+    self.hp += value
+    
     
   def attack_target(self, target: "Entity") -> dict:
     if not isinstance(target, Entity):
@@ -29,7 +36,6 @@ class Entity:
     log.info(
     f"{self.name} attacked {target.name} and dealt {dmg} damage{crit_txt}. Target now has {target.hp} HP"
     )
-    #this will be used with fastapi
     return {
     "attacker": self.name,
     "target": target.name,
@@ -39,9 +45,5 @@ class Entity:
     } 
     
     
-class Enemy(Entity):
-  def __init__(self, name: str):
-    super().__init__(name = name, hp = 80, attack = 15, speed = 15)
-    
-    
+
     

@@ -1,0 +1,227 @@
+game:
+  starting_hp: 200
+  starting_attack: 10
+  starting_speed: 10
+
+paths:
+  high_risk:
+    base_probabilities:
+      enemy: 0.60
+      poison: 0.15
+      floor_down: 0.02
+      heal: 0.15
+      item: 0.03
+      coins: 0.05
+    
+    hints:
+      mist:
+        text: "Something hides in the mist..."
+        messages:
+          enemy: "A shadow lunges from the mist - you must fight!"
+          heal: "You find a small vial that restores some health."
+          poison: "Toxic fumes make you cough and feel weak."
+          item: "You stumble upon abandoned gear in the fog."
+          coins: "You spot a pouch of coins on the ground."
+          floor_up: "A secret passage leads you up a floor."
+          floor_down: "The floor collapses beneath you, dropping you down."
+      
+      blood_stains:
+        text: "Blood stains mark the ground..."
+        messages:
+          enemy: "A wounded beast attacks from the shadows."
+          heal: "A survivor shares some healing herbs with you."
+          poison: "The blood is tainted; you feel sick."
+          item: "You find a fallen warrior's equipment nearby."
+          coins: "A looter's dropped coins lie here for you to take."
+          floor_up: "Following the chase, you find a path upward."
+          floor_down: "The ground gives way and you fall down."
+      
+      ominous_sounds:
+        text: "Ominous sounds echo ahead..."
+        messages:
+          enemy: "A monster emerges from the darkness towards you."
+          heal: "The echo leads you to a hidden spring that heals."
+          poison: "A hissing gas cloud makes you dizzy."
+          item: "You discover a chest hidden in the shadows."
+          coins: "You hear coins clinking and collect them."
+          floor_up: "You hear movement above and climb up."
+          floor_down: "The floor cracks underfoot and you drop down."
+      
+      foul_smell:
+        text: "A foul smell fills the air..."
+        messages:
+          enemy: "A rotting corpse reanimates and attacks you."
+          heal: "You spot medicinal herbs that restore some health."
+          poison: "Poisonous gas fills the room and burns your lungs."
+          item: "The smell leads you to a hidden treasure chest."
+          coins: "You find a dead merchant's purse of coins."
+          floor_up: "Following the scent, you find a path upward."
+          floor_down: "The ground beneath you sinks into a bog."
+
+  medium_risk:
+    base_probabilities:
+      enemy: 0.40
+      heal: 0.20
+      item: 0.15
+      coins: 0.15
+      poison: 0.05
+      floor_down: 0.05
+    
+    hints:
+      lost_child:
+        text: "A lost child asks for help..."
+        messages:
+          enemy: "The child's eyes glow and a disguised goblin attacks you."
+          heal: "The child shares food and you feel restored."
+          poison: "coughs, spreading sickness to you."
+          item: "The child gives you a precious family heirloom."
+          coins: "The grateful parents reward you with coins."
+          floor_up: "The child shows you a secret way upward."
+          floor_down: "The child leads you into a trap and you fall."
+      
+      merchant:
+        text: "A mysterious merchant appears..."
+        messages:
+          enemy: "The merchant was a bandit in disguise and attacks you."
+          heal: "The merchant offers a potion that heals you."
+          poison: "The merchant's goods are cursed and make you sick."
+          item: "The merchant gifts you a sample item."
+          coins: "You pick up coins dropped by the merchant."
+          floor_up: "The merchant points you toward a shortcut upstairs."
+          floor_down: "A trapdoor opens under you and you drop down."
+      
+      whispers:
+        text: "Voices whisper in the distance..."
+        messages:
+          enemy: "The whispers were a hunting party that ambushes you."
+          heal: "Following the whispers, you find a safe resting spot."
+          poison: "The whispers lead you to toxic fungi and you feel ill."
+          item: "The voices guide you to a hidden cache of items."
+          coins: "The whispers direct you to some hidden coins."
+          floor_up: "You follow the sound and find a path upward."
+          floor_down: "The voices mislead you and you fall down."
+      
+      campfire:
+        text: "A campfire glows ahead..."
+        messages:
+          enemy: "The camp belongs to bandits who attack you."
+          heal: "Resting by the fire heals some of your wounds."
+          poison: "Smoke from the fire is toxic and makes you sick."
+          item: "Supplies left at the camp give you an item."
+          coins: "You find coins in a bedroll near the fire."
+          floor_up: "Campers point you toward an upward path."
+          floor_down: "The ground near the camp is weak and you fall."
+
+  low_risk:
+    base_probabilities:
+      enemy: 0.20
+      heal: 0.25
+      item: 0.20
+      coins: 0.20
+      floor_up: 0.10
+      poison: 0.05
+    
+    hints:
+      gut_feeling:
+        text: "My gut feeling says it's a good path"
+        messages:
+          enemy: "An ambush surprises you despite your instincts."
+          heal: "You find a peaceful rest spot and recover."
+          poison: "A hidden fungus poisons you briefly."
+          item: "Your intuition leads you to some loot."
+          coins: "You spot treasure coins nearby."
+          floor_up: "An updraft lifts you to the next floor."
+          floor_down: "Your gut fails and you fall down a floor."
+      
+      peaceful_sounds:
+        text: "Peaceful sounds ahead..."
+        messages:
+          enemy: "A sudden attack shatters the peace and you fight."
+          heal: "Birdsong soothes you and heals some health."
+          poison: "Toxic fungi hidden here make you ill."
+          item: "The peaceful setting hides a treasure item."
+          coins: "Coins are left as offerings nearby."
+          floor_up: "You follow the sound upward to the next floor."
+          floor_down: "The peaceful ground gives way and you fall."
+      
+      sunlight:
+        text: "Sunlight breaks through the clouds..."
+        messages:
+          enemy: "A hidden enemy appears from the shadows."
+          heal: "You bask in sunlight and feel restored."
+          poison: "Exposed spores make you sick briefly."
+          item: "Sunlight glints off a hidden item nearby."
+          coins: "You see coins sparkling in the sunbeam."
+          floor_up: "Light guides you to an upper floor."
+          floor_down: "Blinded by light, you stumble and fall down."
+      
+      gentle_breeze:
+        text: "A gentle breeze guides you..."
+        messages:
+          enemy: "The wind carries an enemy's scent to you and they attack."
+          heal: "Fresh air revitalizes you slightly."
+          poison: "A breeze spreads poison and you feel weak."
+          item: "The wind reveals a hidden item."
+          coins: "Coins blow toward you in the gentle breeze."
+          floor_up: "The breeze lifts you to a stairway above."
+          floor_down: "The wind pushes you off balance and down a floor."
+
+difficulty:
+  lie_chance: 0.10
+  enemy_stat_scaling:
+    tiers:
+      - floor: 10
+        multiplier: 1.0
+      - floor: 20
+        multiplier: 1.10
+      - floor: 30
+        multiplier: 1.265
+      - floor: 40
+        multiplier: 1.5
+      - floor: 50
+        multiplier: 1.9
+      - floor: 60
+        multiplier: 2.375
+      - floor: 70
+        multiplier: 3.085
+      - floor: 80
+        multiplier: 4.165
+      - floor: 90
+        multiplier: 5.85
+      - floor: 100
+        multiplier: 8.75
+  probability_scaling:
+    danger_increase_per_floor: 0.005
+
+milestone_coins:
+  base_rewards:
+    10: 40
+    20: 150
+    30: 400
+    40: 900
+    50: 1800
+    60: 3200
+    70: 5400
+    80: 8500
+    90: 13000
+    100: 20000
+  variance: 0.15
+
+item_categories:
+  swords: 0.4
+  helmets: 0.25
+  chests: 0.2
+  boots: 0.149
+  wings: 0.001
+  
+menu:
+  title: "Dungeon Master"
+  buttons:
+    guide: "[0] - GUIDE"
+    start_game: "[1] - START GAME"
+    stats: "[2] - STATISTICS"
+    settings: "[3] - SETTINGS"
+    exit: "[4] - EXIT"
+  
+  end_game: "GAME OVER"
+  new_record: "NEW RECORD!"

@@ -1,0 +1,228 @@
+game:
+  title: "Maître du Donjon"
+  starting_hp: 200
+  starting_attack: 10
+  starting_speed: 10
+
+paths:
+  high_risk:
+    base_probabilities:
+      enemy: 0.60
+      poison: 0.15
+      floor_down: 0.02
+      heal: 0.15
+      item: 0.03
+      coins: 0.05
+    
+    hints:
+      mist:
+        text: "Quelque chose se cache dans la brume..."
+        messages:
+          enemy: "Une ombre surgit de la brume – vous devez combattre !"
+          heal: "Vous trouvez un petit flacon qui restaure un peu de santé."
+          poison: "Des fumées toxiques vous font tousser et vous affaiblissent."
+          item: "Vous tombez sur un équipement abandonné dans le brouillard."
+          coins: "Vous apercevez une bourse de pièces par terre."
+          floor_up: "Un passage secret mène à l'étage supérieur."
+          floor_down: "Le sol s'effondre sous vous, vous tombant en bas."
+      
+      blood_stains:
+        text: "Des traces de sang marquent le sol..."
+        messages:
+          enemy: "Une bête blessée attaque depuis l'ombre."
+          heal: "Un survivant partage des herbes curatives avec vous."
+          poison: "Le sang est contaminé ; vous vous sentez mal."
+          item: "Vous trouvez l'équipement d'un guerrier tombé à proximité."
+          coins: "Des voleurs ont laissé tomber des pièces que vous prenez."
+          floor_up: "En suivant la piste, vous trouvez un chemin vers le haut."
+          floor_down: "Le sol cède et vous tombez."
+      
+      ominous_sounds:
+        text: "Des sons inquiétants résonnent devant..."
+        messages:
+          enemy: "Un monstre surgit de l'obscurité vers vous."
+          heal: "L'écho vous mène à une source cachée qui soigne."
+          poison: "Un nuage de gaz siffle et vous rend étourdi."
+          item: "Vous découvrez un coffre caché dans l'ombre."
+          coins: "Vous entendez le cliquetis de pièces et les ramassez."
+          floor_up: "Vous entendez des mouvements au-dessus et montez."
+          floor_down: "Le sol se fissure sous vos pieds et vous tombez."
+      
+      foul_smell:
+        text: "Une odeur nauséabonde remplit l'air..."
+        messages:
+          enemy: "Un cadavre en décomposition se réanime et vous attaque."
+          heal: "Vous repérez des herbes médicinales qui restaurent la santé."
+          poison: "Un gaz toxique remplit la pièce et brûle vos poumons."
+          item: "L'odeur vous conduit à un coffre au trésor caché."
+          coins: "Vous trouvez la bourse de pièces d'un marchand mort."
+          floor_up: "En suivant l'odeur, vous trouvez un chemin vers le haut."
+          floor_down: "Le sol s'enfonce dans un marécage sous vos pieds."
+
+  medium_risk:
+    base_probabilities:
+      enemy: 0.40
+      heal: 0.20
+      item: 0.15
+      coins: 0.15
+      poison: 0.05
+      floor_down: 0.05
+    
+    hints:
+      lost_child:
+        text: "Un enfant perdu demande de l'aide..."
+        messages:
+          enemy: "Les yeux de l'enfant brillent et un gobelin déguisé vous attaque."
+          heal: "L'enfant partage de la nourriture et vous vous sentez restauré."
+          poison: "L'enfant tousse, vous transmettant la maladie."
+          item: "L'enfant vous donne un précieux héritage familial."
+          coins: "Les parents reconnaissants vous récompensent avec des pièces."
+          floor_up: "L'enfant vous montre un chemin secret vers le haut."
+          floor_down: "L'enfant vous conduit dans un piège et vous tombez."
+      
+      merchant:
+        text: "Un marchand mystérieux apparaît..."
+        messages:
+          enemy: "Le marchand était un bandit déguisé et vous attaque."
+          heal: "Le marchand propose une potion qui vous soigne."
+          poison: "Les marchandises du marchand sont maudites et vous rendent malade."
+          item: "Le marchand vous offre un objet d'échantillon."
+          coins: "Vous ramassez des pièces laissées par le marchand."
+          floor_up: "Le marchand vous indique un raccourci vers le haut."
+          floor_down: "Une trappe s'ouvre sous vous et vous tombez."
+      
+      whispers:
+        text: "Des voix murmurent au loin..."
+        messages:
+          enemy: "Les murmures étaient une troupe de chasse qui vous tend une embuscade."
+          heal: "En suivant les murmures, vous trouvez un endroit sûr pour vous reposer."
+          poison: "Les murmures vous mènent à des champignons toxiques et vous vous sentez mal."
+          item: "Les voix vous guident vers une cachette d'objets."
+          coins: "Les murmures vous dirigent vers des pièces cachées."
+          floor_up: "Vous suivez le son et trouvez un chemin vers le haut."
+          floor_down: "Les voix vous induisent en erreur et vous tombez."
+      
+      campfire:
+        text: "Un feu de camp brille devant..."
+        messages:
+          enemy: "Le camp appartient à des bandits qui vous attaquent."
+          heal: "Se reposer près du feu soigne une partie de vos blessures."
+          poison: "La fumée du feu est toxique et vous rend malade."
+          item: "Des provisions laissées au camp vous donnent un objet."
+          coins: "Vous trouvez des pièces dans un sac de couchage proche du feu."
+          floor_up: "Les campeurs vous indiquent un chemin vers le haut."
+          floor_down: "Le sol près du camp est fragile et vous tombez."
+
+  low_risk:
+    base_probabilities:
+      enemy: 0.20
+      heal: 0.25
+      item: 0.20
+      coins: 0.20
+      floor_up: 0.10
+      poison: 0.05
+    
+    hints:
+      gut_feeling:
+        text: "Mon instinct dit que c'est un bon chemin"
+        messages:
+          enemy: "Une embuscade vous surprend malgré vos instincts."
+          heal: "Vous trouvez un endroit paisible pour vous reposer et récupérer."
+          poison: "Un champignon caché vous empoisonne brièvement."
+          item: "Votre intuition vous conduit à du butin."
+          coins: "Vous apercevez des pièces de trésor à proximité."
+          floor_up: "Un courant d'air vous élève vers l'étage suivant."
+          floor_down: "Votre instinct vous trompe et vous tombez d'un étage."
+      
+      peaceful_sounds:
+        text: "Des sons paisibles devant..."
+        messages:
+          enemy: "Une attaque soudaine brise la paix et vous combattez."
+          heal: "Le chant des oiseaux vous apaise et soigne un peu."
+          poison: "Des champignons toxiques cachés vous rendent malade."
+          item: "Le cadre paisible cache un objet au trésor."
+          coins: "Des pièces sont laissées comme offrandes à proximité."
+          floor_up: "Vous suivez le son vers l'étage supérieur."
+          floor_down: "Le sol paisible cède et vous tombez."
+      
+      sunlight:
+        text: "La lumière du soleil perce les nuages..."
+        messages:
+          enemy: "Un ennemi caché apparaît depuis l'ombre."
+          heal: "Vous vous imprégnez de lumière et vous vous sentez restauré."
+          poison: "Des spores exposées vous rendent brièvement malade."
+          item: "La lumière reflète un objet caché à proximité."
+          coins: "Vous voyez des pièces scintiller au soleil."
+          floor_up: "La lumière vous guide vers l'étage supérieur."
+          floor_down: "Ébloui par la lumière, vous trébuchez et tombez."
+      
+      gentle_breeze:
+        text: "Une brise douce vous guide..."
+        messages:
+          enemy: "Le vent porte l'odeur d'un ennemi et il vous attaque."
+          heal: "L'air frais vous revitalise légèrement."
+          poison: "Une brise répand du poison et vous vous sentez faible."
+          item: "Le vent révèle un objet caché."
+          coins: "Des pièces sont poussées vers vous par la brise."
+          floor_up: "La brise vous élève vers un escalier au-dessus."
+          floor_down: "Le vent vous déséquilibre et vous tombez d'un étage."
+
+difficulty:
+  lie_chance: 0.10
+  enemy_stat_scaling:
+    tiers:
+      - floor: 10
+        multiplier: 1.0
+      - floor: 20
+        multiplier: 1.10
+      - floor: 30
+        multiplier: 1.265
+      - floor: 40
+        multiplier: 1.5
+      - floor: 50
+        multiplier: 1.9
+      - floor: 60
+        multiplier: 2.375
+      - floor: 70
+        multiplier: 3.085
+      - floor: 80
+        multiplier: 4.165
+      - floor: 90
+        multiplier: 5.85
+      - floor: 100
+        multiplier: 8.75
+  probability_scaling:
+    danger_increase_per_floor: 0.005
+
+milestone_coins:
+  base_rewards:
+    10: 40
+    20: 150
+    30: 400
+    40: 900
+    50: 1800
+    60: 3200
+    70: 5400
+    80: 8500
+    90: 13000
+    100: 20000
+  variance: 0.15
+
+item_categories:
+  swords: 0.4
+  helmets: 0.25
+  chests: 0.2
+  boots: 0.149
+  wings: 0.001
+  
+menu:
+  title: "Maître du Donjon"
+  buttons:
+    guide: "[0] - GUIDE"
+    start_game: "[1] - COMMENCER"
+    stats: "[2] - STATISTIQUES"
+    settings: "[3] - PARAMÈTRES"
+    exit: "[4] - QUITTER"
+
+  end_game: "FIN"
+  new_record: "NOUVEAU RECORD"

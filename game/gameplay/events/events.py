@@ -1,10 +1,14 @@
 from random import randint, uniform, random, choice, choices
-from ..entities import Entity, Player, Enemy
-from .entities.entities_list import HUMANOIDS, MONSTERS
-from ..equipment.items import Item, SWORDS, HELMETS, CHESTS, BOOTS, WINGS, ALL_ITEMS, ALL_ITEMS_FLAT, CATEGORY_CHANCES
-from ..equipment import _apply_from_equipment
-from typing import Optional 
-from .combat_logic import fight_to_death
+from typing import Optional
+
+from gameplay.entities.player import Player
+from gameplay.entities.enemies_list import HUMANOIDS, MONSTERS
+from gameplay.equipment.items.item import Item
+from gameplay.equipment.items.items_list import (
+    SWORDS, HELMETS, CHESTS, BOOTS, WINGS,
+    ALL_ITEMS, CATEGORY_CHANCES
+    )
+from gameplay.combat_logic.adventure import fight_to_death
 
 
 #lucky
@@ -16,8 +20,7 @@ def heal_event(player: Player):
   "value": _amount
 }  
   
-def random_item_event(player: Player):
-  #ideally this needs to be refactored but too much codepasta to handle for now
+def random_item_event(player: Player):     
   _types = list(CATEGORY_CHANCES.keys())
   _chances = list(CATEGORY_CHANCES.values())
   #respects _chances
@@ -25,23 +28,23 @@ def random_item_event(player: Player):
   _chosen_item = choice(list(ALL_ITEMS[_select_type].values()))
   #need to map because values ≠ keys in player.equipment
   _MAPPING = {
-    "weapons": "weapon",
+    "swords": "weapon",
     "helmets": "helmet",
     "chests": "chest",
     "boots": "boots",
     "wings": "wings"
   }
-
-  _select_type = _MAPPING[_select_type]
   
-  if player.equipment[_select_type] is None:
-    player.equipment[_select_type] = _chosen_item
+  slot = _MAPPING[_select_type]
+  if player.equipment[slot] is None:
+    player.add_item(_chosen_item)
+    player.equip(slot, _chosen_item)
   else:
     player.add_item(_chosen_item)
-  _validate_item(player) 
+    
   return {
     "type": "random item",
-    "value": _chosen_item
+    "value": _chosen_item.name
     }
     
     
@@ -70,18 +73,27 @@ def add_coins_event(player: Player):
 
 
 #unlucky
-def summon_enemy_event(player: Player, enemy: Optional[Entity] = None):
-"""
-Convoluted approach. I'll merge 2 groups first, then choose an entity from the list, and initialize a battle automatically. Enemy of choice can be passed through arguments 
-"""
-if not enemy:
-  _merged_lst = list(HUMANOIDS) + list(MONSTERS)
-  _select_enemy = choice(_merged_lst)
-else: 
-  _select_enemy = enemy
-fight_to_death(player, _select_enemy)
-#fight_to_death returns already 
 
+def summon_enemy_event(player: Player, enemy: Optional[str] = None):
+  from gameplay.entities.enemies import reinforce_enemy
+  
+  all_enemies = {**HUMANOIDS, **MONSTERS}
+  
+  #now utilizes factory pattern
+  if not enemy:
+    enemy = choice(list(all_enemies.keys()))
+  if enemy not in all_enemies:
+    raise ValueError(f"Provided enemy ({enemy}) can't be initialized as it's invalid")
+    
+  opponent = all_enemies[enemy]()
+  opponent = reinforce_enemy(opponent, player.floor)
+    
+  res = fight_to_death(player, opponent)
+  return {
+  "type": "summon enemy",
+  "value": opponent.name,
+  "report": res
+  }
 
 def poison_event(player: Player):
   _fixed_player_floor = player.floor
@@ -99,7 +111,7 @@ def floor_down_event(player: Player):
   _amount = 1
   if random() < 0.1:
     _amount = 2
-  player.floor -= _amount
+  player.floor = max(0, player.floor-_amount)
   return {
   "type": "floor down",
   "value": _amount

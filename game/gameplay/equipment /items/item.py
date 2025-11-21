@@ -1,6 +1,6 @@
 class Item:
-"""This turns equipment into actual objects"""
-  def __init__(self, name: str, slot: str, attack_multiply: int = 1, attack_add: int = 0, hp_multiply: int = 1, hp_add: int = 0, speed: int = 0):
+  """This turns equipment into actual objects"""
+  def __init__(self, name: str, slot: str, attack_multiply: int | float = 1, attack_add: int | float  = 0, hp_multiply: int | float = 1, hp_add: int | float = 0, speed: int | float = 0):
     self.name = name
     self.slot = slot
     self.attack_multiply = attack_multiply

@@ -1,0 +1,42 @@
+├── builder.py
+├── config
+│   ├── en
+│   │   └── config.yaml
+│   ├── fr
+│   │   └── config.yaml
+│   └── loader.py
+├── engine
+│   ├── engine.py
+│   ├── state.py
+│   └── turn_logic.py
+├── gameplay
+│   ├── combat_logic
+│   │   └── adventure.py
+│   ├── entities
+│   │   ├── enemies.py
+│   │   ├── enemies_list.py
+│   │   ├── entities.py
+│   │   └── player.py
+│   ├── equipment
+│   │   ├── errors.py
+│   │   ├── items
+│   │   │   ├── item.py
+│   │   │   └── items_list.py
+│   │   └── player_equipment.py
+│   └── events
+│       ├── events.py
+│       └── events.py.bak
+├── main.py
+├── menu
+│   ├── menu_terminal.py
+│   └── menu_web.py
+├── orchestration
+│   ├── api
+│   ├── data output
+│   │   └── combat_results.py
+│   ├── infrastructure
+│   │   ├── cache.py
+│   │   └── postgresql.py
+│   └── services
+│       └── player_service.py
+├── requirements.txt
