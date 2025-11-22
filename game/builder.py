@@ -1,5 +1,4 @@
-from game.config.loader import load_config, get_current_language
-from game.gameplay.entities.player import Player
+from __future__ import annotations
 from random import choice, choices, randint
 import logging
 
@@ -7,11 +6,15 @@ import logging
 log = logging.getLogger(__name__)
 
 
-def create_player(name: str, language = None) -> Player:
+def create_player(name: str, language = None) -> Player: # type: ignore
   """
   IMPORTANT: language selection actually happens when a player is initialized.
   - Language CAN be passed manually or by loading with get_current_language() 
   """
+
+  from game.gameplay.entities.player import Player
+  from game.config.loader import load_config, get_current_language
+
   #if it's not passed as argument 
   if language is None:
     language = get_current_language()
@@ -49,6 +52,10 @@ def create_3_paths(floor: int, language: str = None) -> list[dict]:
   Generates 3 paths for player to choose from (config["game"] has it all).
   Returns a list WITH DICTIONARIES 
   """
+
+  from game.gameplay.entities.player import Player
+  from game.config.loader import load_config, get_current_language
+
   if language is None:
     language = get_current_language()
     
@@ -72,7 +79,9 @@ def create_3_paths(floor: int, language: str = None) -> list[dict]:
   return paths
   
   
-def check_milestone(player: Player, language: str = None):
+def check_milestone(player: Player, language: str = None): # type: ignore
+  from game.gameplay.entities.player import Player
+  from game.config.loader import load_config, get_current_language
   #stop immediately if floor isn't dividable by 10 
   if player.floor % 10 != 0:
     return
@@ -97,12 +106,16 @@ def check_milestone(player: Player, language: str = None):
   log.info(f"{player.name} just received {finalized_amount} coins")
 
 
-def create_event(player: Player, chosen_path: dict, language: str = None):
+def create_event(player: Player, chosen_path: dict, language: str = None): # type: ignore
   """
   Handles all events for both environments and keeps the facade simple and approachable. Events need to be added here if new are implemented 
   IMPORTANT: create_3_paths() has to be called SEPARATELY 
   """
-  from gameplay.events import (
+
+  from game.gameplay.entities.player import Player
+  from game.config.loader import load_config, get_current_language
+
+  from game.gameplay.events.events import (
   floor_down_event, poison_event, summon_enemy_event, heal_event, random_item_event, floor_up_event, add_coins_event
   )
   

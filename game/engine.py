@@ -1,19 +1,22 @@
-import logging
+from __future__ import annotations
 from random import random, choice
-from game.gameplay.entities.player import Player
-from game.builder import create_3_paths, check_milestone, create_event
-from game.config.loader import load_config, get_current_language
+import logging
 
 
 log = logging.getLogger(__name__)
 
 
-def game_loop(player: Player, language: str = None):
+def game_loop(player: Player, language: str = None): # type: ignore
   """
   This module links all pieces to create a game loop.
   accepts player and their language.
   Works for both web and terminal 
   """
+
+  from game.config.loader import load_config, get_current_language
+  from game.builder import create_3_paths, check_milestone, create_event
+  from game.gameplay.entities.player import Player
+
   if language is None:
     language = get_current_language()
   

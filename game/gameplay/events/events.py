@@ -1,18 +1,12 @@
+from __future__ import annotations 
 from random import randint, uniform, random, choice, choices
 from typing import Optional
 
-from game.gameplay.entities.player import Player
-from game.gameplay.entities.enemies_list import HUMANOIDS, MONSTERS
-from game.gameplay.equipment.items.item import Item
-from game.gameplay.equipment.items.items_list import (
-    SWORDS, HELMETS, CHESTS, BOOTS, WINGS,
-    ALL_ITEMS, CATEGORY_CHANCES
-    )
-from game.gameplay.combat_logic.adventure import fight_to_death
-
 
 #lucky
-def heal_event(player: Player):
+def heal_event(player: Player): # type: ignore
+  from game.gameplay.entities.player import Player
+
   _amount = randint(1, 35)
   player.heal(_amount)
   return {
@@ -20,7 +14,15 @@ def heal_event(player: Player):
   "value": _amount
 }  
   
-def random_item_event(player: Player):     
+def random_item_event(player: Player):      # type: ignore
+  from game.gameplay.entities.player import Player
+  from game.gameplay.equipment.items.item import Item
+  from game.gameplay.equipment.items.items_list import (
+      SWORDS, HELMETS, CHESTS, BOOTS, WINGS,
+      ALL_ITEMS, CATEGORY_CHANCES
+      )
+  
+  #decide item type based on CATEGORY_CHANCES
   _types = list(CATEGORY_CHANCES.keys())
   _chances = list(CATEGORY_CHANCES.values())
   #respects _chances
@@ -48,7 +50,9 @@ def random_item_event(player: Player):
     }
     
     
-def floor_up_event(player: Player):
+def floor_up_event(player: Player): # type: ignore
+  from game.gameplay.entities.player import Player
+
   _amount = 1
   if random() < 0.1:
     _amount = 2
@@ -59,7 +63,9 @@ def floor_up_event(player: Player):
   } 
 
 
-def add_coins_event(player: Player):
+def add_coins_event(player: Player): # type: ignore
+  from game.gameplay.entities.player import Player
+
   _amount = randint(10, 30)
   if random() < 0.5:
     _amount = randint(30, 40)
@@ -74,9 +80,12 @@ def add_coins_event(player: Player):
 
 #unlucky
 
-def summon_enemy_event(player: Player, enemy: Optional[str] = None):
+def summon_enemy_event(player: Player, enemy: Optional[str] = None): # type: ignore
   from game.gameplay.entities.enemies import reinforce_enemy
-  
+  from game.gameplay.entities.player import Player
+  from game.gameplay.entities.enemies_list import HUMANOIDS, MONSTERS
+  from game.gameplay.combat_logic.adventure import fight_to_death
+
   all_enemies = {**HUMANOIDS, **MONSTERS}
   
   #now utilizes factory pattern
@@ -95,7 +104,9 @@ def summon_enemy_event(player: Player, enemy: Optional[str] = None):
   "report": res
   }
 
-def poison_event(player: Player):
+def poison_event(player: Player): # type: ignore
+  from game.gameplay.entities.player import Player
+
   _fixed_player_floor = player.floor
   while player.floor == _fixed_player_floor:
     player.hp -= 10
@@ -107,7 +118,9 @@ def poison_event(player: Player):
   } 
   
 
-def floor_down_event(player: Player):
+def floor_down_event(player: Player): # type: ignore
+  from game.gameplay.entities.player import Player
+
   _amount = 1
   if random() < 0.1:
     _amount = 2

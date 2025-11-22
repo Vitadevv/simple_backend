@@ -1,3 +1,4 @@
+from __future__ import annotations
 from random import uniform 
 import logging 
 
@@ -25,7 +26,9 @@ class Entity:
     self.hp += value
     
     
-  def attack_target(self, target: "Entity") -> dict:
+  def attack_target(self, target: Entity) -> dict: # type: ignore
+    from game.gameplay.entities.entities import Entity
+
     if not isinstance(target, Entity):
       log.error(f"{self.name} tried to attack {target}")
       raise TypeError("This is not an entity that you try to attack")

@@ -1,9 +1,12 @@
-from game.gameplay.entities.entities import Entity
+from __future__ import annotations
 from random import random
 
 
-def take_turn(player: Entity, enemy: Entity) -> dict:
+def take_turn(player: Player, enemy: Enemy) -> dict: # type: ignore
   """Executes only 1 turn. Useful for debugging and may be a useful helper function."""
+  from game.gameplay.entities.enemies import Enemy
+  from game.gameplay.entities.player import Player
+
   report = []
   if player.is_alive() and enemy.is_alive():
     player_hit = player.attack_target(enemy)
@@ -18,7 +21,10 @@ def take_turn(player: Entity, enemy: Entity) -> dict:
   }
   
   
-def flee(player: Entity, enemy: Entity) -> dict:
+def flee(player: Player, enemy: Enemy) -> dict: # type: ignore
+  from game.gameplay.entities.player import Player
+  from game.gameplay.entities.enemies import Enemy
+
   if player.speed > enemy.speed:
     player.floor += 1
     return {
@@ -42,7 +48,10 @@ def flee(player: Entity, enemy: Entity) -> dict:
      }
   
   
-def fight_to_death(player: Entity, enemy: Entity) -> dict:
+def fight_to_death(player: Player, enemy: Enemy) -> dict: # type: ignore
+  from game.gameplay.entities.player import Player
+  from game.gameplay.entities.enemies import Enemy
+
   turns = 0
   report = []
   while player.is_alive() and enemy.is_alive():

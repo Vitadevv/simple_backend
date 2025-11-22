@@ -10,6 +10,7 @@ class Item:
     self.speed = speed
     
   def __repr__(self):
+    """For debugging purposes"""
     return f"{self.name} at {self.slot} with:\nattack_multiply: {self.attack_multiply};\nattack_add: {self.attack_add};\nhp_multiply: {self.hp_multiply};\nhp_add: {self.hp_add};\nspeed: {self.speed}"
 
 

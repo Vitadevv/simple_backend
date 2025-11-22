@@ -1,15 +1,18 @@
+from __future__ import annotations 
+from game.gameplay.entities.entities import Entity  #circular import not possible here
+
 import time 
 import logging 
+from typing import Optional
 
-from typing import Optional 
-from game.gameplay.equipment.errors import EquipmentError
-from game.gameplay.entities.entities import Entity
-from game.gameplay.equipment.items.item import Item
 
 log = logging.getLogger(__name__)
 
-class Player(Entity):
+class Player(Entity): # type: ignore
+
   def __init__(self, name: str, hp: int | float, attack: int | float, speed: int | float):  
+    from game.gameplay.entities.entities import Entity
+    from game.gameplay.equipment.items.item import Item
     super().__init__(
       name=name, 
       hp=hp, 
@@ -43,7 +46,9 @@ class Player(Entity):
     #====== EQUIPMENT =======
     
     
-  def add_item(self, item: Item, quantity: int = 1) -> None:
+  def add_item(self, item: Item, quantity: int = 1) -> None: # type: ignore
+    from game.gameplay.equipment.items.item import Item
+
     if not isinstance(item, Item):
       self.flags += 1
       log.warning(f"{self.name} attempted to add {item} which is invalid. Flagged")
@@ -52,7 +57,10 @@ class Player(Entity):
     log.info(f"{self.name} put {quantity} of {item.name} in their inventory")
     
     
-  def remove_item(self, item: Item, quantity: int = 1) -> None:
+  def remove_item(self, item: Item, quantity: int = 1) -> None: # type: ignore
+    from game.gameplay.equipment.errors import EquipmentError
+    from game.gameplay.equipment.items.item import Item
+
     if not isinstance(item, Item):
       self.flags += 1
       log.warning(f"{self.name} attempted to remove {item} which is invalid. Flagged")
@@ -71,8 +79,10 @@ class Player(Entity):
       self.inventory[item] = new_quantity
       log.info(f"{self.name}'s new quantity of {item.name} has diminished. Now {new_quantity}")
    
-  def equip(self, slot: str, item: Item):
+  def equip(self, slot: str, item: Item): # type: ignore
+    from game.gameplay.equipment.items.item import Item
     from gameplay.equipment.player_equipment import equip_item
+
     #best option is to return it as equip_item contains returns too
     equipped = equip_item(self, slot, item)
     log.info(f"{self.name} equipped {item.name} to {slot}")

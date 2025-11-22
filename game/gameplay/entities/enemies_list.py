@@ -1,8 +1,10 @@
-from game.gameplay.entities.enemies import Enemy
+from game.gameplay.entities.enemies import Enemy    #circular import not possible here
 from random import randint as ri
 
 
-#Reengineered entirely (in earlier versions stats were only chosen once and stored for good. Factory pattern fixed this)
+#Reengineered entirely (in earlier versions stats were only chosen 
+#once and stored for good. Factory pattern fixed this)
+
 def create_rogue() -> Enemy:
   return Enemy(
     name="rogue",

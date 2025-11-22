@@ -1,6 +1,3 @@
-from game.builder import create_player
-from game.engine import game_loop
-from game.config.loader import get_current_language, load_config, get_menu
 import logging
 
 
@@ -65,7 +62,7 @@ def wrap_mountain(func):
     return res
   return wrapper
 
-def slow_print(text: str, delay: float = 0.05):
+def slow_print(text: str, delay: float = 0.05, hold: float = 1.5):
   import sys
   import time
   for char in text:
@@ -73,10 +70,15 @@ def slow_print(text: str, delay: float = 0.05):
     sys.stdout.flush()
     time.sleep(delay)
   print()
+  if hold and hold > 0:  # Check if hold is a positive number
+    time.sleep(hold)
 #===========================================                
   
   
 def menu():
+  from game.builder import create_player
+  from game.engine import game_loop
+  from game.config.loader import get_current_language, get_menu
 
   #BUTTONS
   @wrap_equal
@@ -96,11 +98,13 @@ def menu():
     print(config_menu["buttons"]["settings"])      
   @wrap_hyphen    
   def exit():
-    print(config_menu["buttons"]["guide"]) 
+    print(config_menu["buttons"]["exit"])
 
 
   language = get_current_language()
   config_menu = get_menu(language)
+
+
   while True:
     title()
     guide()
@@ -116,7 +120,7 @@ def menu():
 
     #start game
     elif player_choice == "1":
-      player = create_player()
+      player = create_player(name = "player")
       game_loop(player)
 
     #stats

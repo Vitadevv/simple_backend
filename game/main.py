@@ -1,6 +1,8 @@
 import logging
 import time
 
+from game.menu.menu_terminal import menu
+
 #debug might be added later on
 logging.basicConfig(
     level=logging.INFO,
@@ -8,3 +10,5 @@ logging.basicConfig(
 )
 
 logging.Formatter.converter = time.gmtime
+
+menu()
