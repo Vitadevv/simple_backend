@@ -1,4 +1,4 @@
-from .enemies import Enemy
+from game.gameplay.entities.enemies import Enemy
 from random import randint as ri
 
 

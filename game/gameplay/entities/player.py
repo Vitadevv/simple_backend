@@ -2,14 +2,14 @@ import time
 import logging 
 
 from typing import Optional 
-from gameplay.equipment.errors import EquipmentError
-from gameplay.entities.entities import Entity
-from gameplay.equipment.items.item import Item
+from game.gameplay.equipment.errors import EquipmentError
+from game.gameplay.entities.entities import Entity
+from game.gameplay.equipment.items.item import Item
 
 log = logging.getLogger(__name__)
 
 class Player(Entity):
-  def __init__(self, name: str):  
+  def __init__(self, name: str, hp: int | float, attack: int | float, speed: int | float):  
     super().__init__(
       name=name, 
       hp=hp, 

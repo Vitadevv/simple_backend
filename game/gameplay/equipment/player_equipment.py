@@ -1,12 +1,11 @@
 import logging
 from typing import Optional
-from gameplay.entities.entities import Entity
-from gameplay.equipment.items.item import Item
-from gameplay.equipment.errors import EquipmentError
-from gameplay.equipment.status import EquipStatus
+from game.gameplay.entities.entities import Entity
+from game.gameplay.equipment.items.item import Item
+from game.gameplay.equipment.errors import EquipmentError
 from typing import TYPE_CHECKING
 
-
+#needed because of circular imports, type checking 
 if TYPE_CHECKING:
     from gameplay.entities.player import Player
     
@@ -29,14 +28,13 @@ def _validate_item_available(player: "Player", item: Item) -> None:
 
 
 def _validate_slot_compatibility(slot: str, item: Item) -> None:
-  #now this is more strict about slots 
   if item.slot != slot:
     log.warning(f"{item.name} can't be equipped into {item.slot}")
     raise EquipmentError(f"Item {item.name} cannot be equipped into {slot}")
 
 
 def _apply_from_equipment(player: "Player") -> None:
-  #temporary placeholder 
+  #temporary in this function 
   total_attack = player.base_attack
   total_hp = player.base_hp
   total_speed = player.base_speed

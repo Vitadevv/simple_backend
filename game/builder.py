@@ -1,6 +1,6 @@
-from config.loader import load_config, get_current_language
-from gameplay.entities.player import Player
-from random import choice, choices, randint,
+from game.config.loader import load_config, get_current_language
+from game.gameplay.entities.player import Player
+from random import choice, choices, randint
 import logging
 
 

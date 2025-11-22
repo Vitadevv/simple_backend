@@ -1,4 +1,4 @@
-from gameplay.entities.entities import Entity
+from game.gameplay.entities.entities import Entity
 from random import random
 
 

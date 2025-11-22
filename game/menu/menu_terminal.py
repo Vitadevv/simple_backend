@@ -1,6 +1,6 @@
-from builder import create_player
-from engine import game_loop
-from config.loader import get_current_language, set_language, load_config, get_menu
+from game.builder import create_player
+from game.engine import game_loop
+from game.config.loader import get_current_language, load_config, get_menu
 import logging
 
 
@@ -17,10 +17,6 @@ Provides options to
 
 
 log = logging.getLogger(__name__)
-
-
-language = get_current_language()
-config_menu = get_menu(language)
 
 
 #REF
@@ -77,32 +73,34 @@ def slow_print(text: str, delay: float = 0.05):
     sys.stdout.flush()
     time.sleep(delay)
   print()
-#===========================================
-
-
-#BUTTONS
-@wrap_equal
-def title():
-  print(config_menu["title"])  
-@wrap_hyphen    
-def guide():
-  print(config_menu["buttons"]["guide"])  
-@wrap_hyphen    
-def start_game():
-  print(config_menu["buttons"]["start_game"])      
-@wrap_hyphen    
-def stats():
-  print(config_menu["buttons"]["stats"])   
-@wrap_hyphen    
-def settings():
-  print(config_menu["buttons"]["settings"])      
-@wrap_hyphen    
-def exit():
-  print(config_menu["buttons"]["guide"])         
-          
-                
+#===========================================                
+  
   
 def menu():
+
+  #BUTTONS
+  @wrap_equal
+  def title():
+    print(config_menu["title"])  
+  @wrap_hyphen    
+  def guide():
+    print(config_menu["buttons"]["guide"])  
+  @wrap_hyphen    
+  def start_game():
+    print(config_menu["buttons"]["start_game"])      
+  @wrap_hyphen    
+  def stats():
+    print(config_menu["buttons"]["stats"])   
+  @wrap_hyphen    
+  def settings():
+    print(config_menu["buttons"]["settings"])      
+  @wrap_hyphen    
+  def exit():
+    print(config_menu["buttons"]["guide"]) 
+
+
+  language = get_current_language()
+  config_menu = get_menu(language)
   while True:
     title()
     guide()

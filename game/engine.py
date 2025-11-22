@@ -1,8 +1,8 @@
 import logging
 from random import random, choice
-from gameplay.entities.player import Player
-from builder import create_3_paths, check_milestone, create_event
-from config.loader import load_config, get_current_language
+from game.gameplay.entities.player import Player
+from game.builder import create_3_paths, check_milestone, create_event
+from game.config.loader import load_config, get_current_language
 
 
 log = logging.getLogger(__name__)

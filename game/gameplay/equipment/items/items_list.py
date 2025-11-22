@@ -1,4 +1,4 @@
-from items.item import Item
+from game.gameplay.equipment.items.item import Item
 
 # # # WEAPONS # # #
 SWORDS = {

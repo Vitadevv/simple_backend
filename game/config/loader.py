@@ -50,8 +50,8 @@ def load_config(language='en') -> dict[str, Any]:
   
 def get_current_language(user_id = None) -> str:
   import json
-  import _get_language_from_file
-  import _get_language_from_db
+  from game.config.helpers import _get_language_from_file
+  from game.config.helpers import _get_language_from_db
   
   """
   Works for terminals AND web (using ID)
@@ -73,8 +73,8 @@ def get_current_language(user_id = None) -> str:
 
 
 def set_current_language(language: str = 'en', user_id = None) -> str:
-  import _set_language_to_file
-  import _set_language_to_db
+  from game.config.helpers import _set_language_to_file
+  from game.config.helpers import _set_language_to_db
 
   if user_id is None:
     #terminal

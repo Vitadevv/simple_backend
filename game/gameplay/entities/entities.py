@@ -1,7 +1,9 @@
 from random import uniform 
 import logging 
 
+
 log = logging.getLogger(__name__)
+
 
 class Entity:
   def __init__(self, name: str, hp: int | float = 100, attack: int | float = 10, speed: int | float = 10):

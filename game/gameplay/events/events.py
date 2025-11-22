@@ -1,14 +1,14 @@
 from random import randint, uniform, random, choice, choices
 from typing import Optional
 
-from gameplay.entities.player import Player
-from gameplay.entities.enemies_list import HUMANOIDS, MONSTERS
-from gameplay.equipment.items.item import Item
-from gameplay.equipment.items.items_list import (
+from game.gameplay.entities.player import Player
+from game.gameplay.entities.enemies_list import HUMANOIDS, MONSTERS
+from game.gameplay.equipment.items.item import Item
+from game.gameplay.equipment.items.items_list import (
     SWORDS, HELMETS, CHESTS, BOOTS, WINGS,
     ALL_ITEMS, CATEGORY_CHANCES
     )
-from gameplay.combat_logic.adventure import fight_to_death
+from game.gameplay.combat_logic.adventure import fight_to_death
 
 
 #lucky
@@ -75,7 +75,7 @@ def add_coins_event(player: Player):
 #unlucky
 
 def summon_enemy_event(player: Player, enemy: Optional[str] = None):
-  from gameplay.entities.enemies import reinforce_enemy
+  from game.gameplay.entities.enemies import reinforce_enemy
   
   all_enemies = {**HUMANOIDS, **MONSTERS}
   
