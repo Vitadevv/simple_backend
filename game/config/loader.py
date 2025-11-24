@@ -72,13 +72,13 @@ def get_current_language(user_id = None) -> str:
       raise RuntimeError(f"{db_get_lang} failed: user_id ({user_id}) is invalid")
 
 
-def set_current_language(language: str = 'en', user_id = None) -> str:
+def set_current_language(language: str = "en", user_id = None) -> str:
   from game.config.helpers import _set_language_to_file
   from game.config.helpers import _set_language_to_db
 
   if user_id is None:
     #terminal
-    _set_language_to_file(language)
+    _set_language_to_file(language)       #fr or en
     
   if user_id:
     #web
@@ -114,11 +114,18 @@ def get_milestone_coins(floor: int) -> int | None:
   return randint(base - variance_amount, base + variance_amount)
 
 def get_menu(language: str = None):
-  """
-  for all languages 
-  """
+  
   if language is None:
     language = get_current_language()
     
   config = load_config(language)
   return config.get("menu", {})   #fallback
+
+
+def get_game_loop(language: str = None):
+
+  if language is None:
+    language = get_current_language()
+
+  config = load_config(language)
+  return config.get("game_loop", {})   #fallback

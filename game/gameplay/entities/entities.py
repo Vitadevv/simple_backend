@@ -1,7 +1,7 @@
 from __future__ import annotations
 from random import uniform 
 import logging 
-
+from game.config.loader import load_config
 
 log = logging.getLogger(__name__)
 

@@ -1,0 +1,86 @@
+2025-11-23 14:44:37,910 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:44:48,945 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:44:57,776 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:45:07,635 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 14:45:13,692 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 14:48:08,898 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 14:48:29,424 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 14:48:35,276 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:48:37,779 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:48:49,891 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:49:06,238 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:49:08,080 UTC | INFO | game.builder | player has been created with en language used from previous session
+2025-11-23 14:49:08,102 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:49:08,145 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-23 14:49:08,146 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-23 14:49:08,146 UTC | INFO | game.engine | player's game_loop is initialized
+2025-11-23 14:49:08,147 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-23 14:49:08,147 UTC | INFO | game.engine | player is currently at 0. HP: 200
+2025-11-23 14:49:08,166 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:49:08,166 UTC | INFO | game.builder | paths generared for floor 0: [{'risk': 'high_risk', 'hint_id': 'ominous_sounds', 'hint_text': 'Ominous sounds echo ahead...'}, {'risk': 'medium_risk', 'hint_id': 'lost_child', 'hint_text': 'A lost child asks for help...'}, {'risk': 'low_risk', 'hint_id': 'peaceful_sounds', 'hint_text': 'Peaceful sounds ahead...'}]
+2025-11-23 14:49:08,226 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:49:08,308 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:49:08,308 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: orc;
+hp: 43;
+attack: 13;
+speed: 6;
+loot: 5
+2025-11-23 14:49:08,308 UTC | INFO | game.gameplay.entities.entities | player attacked orc and dealt 9.71 damage. Target now has 33.29 HP
+2025-11-23 14:49:08,308 UTC | INFO | game.gameplay.entities.entities | orc attacked player and dealt 17.33 damage (CRIT DMG). Target now has 182.67000000000002 HP
+2025-11-23 14:49:08,308 UTC | INFO | game.gameplay.entities.entities | player attacked orc and dealt 11.89 damage. Target now has 21.4 HP
+2025-11-23 14:49:08,308 UTC | INFO | game.gameplay.entities.entities | orc attacked player and dealt 16.76 damage (CRIT DMG). Target now has 165.91000000000003 HP
+2025-11-23 14:49:08,309 UTC | INFO | game.gameplay.entities.entities | player attacked orc and dealt 10.64 damage. Target now has 10.759999999999998 HP
+2025-11-23 14:49:08,309 UTC | INFO | game.gameplay.entities.entities | orc attacked player and dealt 18.94 damage (CRIT DMG). Target now has 146.97000000000003 HP
+2025-11-23 14:49:08,309 UTC | INFO | game.gameplay.entities.entities | player attacked orc and dealt 7.45 damage. Target now has 3.309999999999998 HP
+2025-11-23 14:49:08,309 UTC | INFO | game.gameplay.entities.entities | orc attacked player and dealt 12.05 damage. Target now has 134.92000000000002 HP
+2025-11-23 14:49:08,309 UTC | INFO | game.gameplay.entities.entities | player attacked orc and dealt 12.74 damage (CRIT DMG). Target now has 0 HP
+2025-11-23 14:49:08,309 UTC | INFO | game.engine | player executed {'type': 'summon enemy', 'value': 'orc', 'report': {'winner': 'player', 'remaining_hp': 134.92000000000002, 'turns': 5, 'report': [{'player HP': 182.67000000000002, 'enemy HP': 33.29, 'report': [{'attacker': 'player', 'target': 'orc', 'damage': 9.71, 'crit': False, 'target_hp': 33.29}, {'attacker': 'orc', 'target': 'player', 'damage': 17.33, 'crit': True, 'target_hp': 182.67000000000002}]}, {'player HP': 165.91000000000003, 'enemy HP': 21.4, 'report': [{'attacker': 'player', 'target': 'orc', 'damage': 11.89, 'crit': False, 'target_hp': 21.4}, {'attacker': 'orc', 'target': 'player', 'damage': 16.76, 'crit': True, 'target_hp': 165.91000000000003}]}, {'player HP': 146.97000000000003, 'enemy HP': 10.759999999999998, 'report': [{'attacker': 'player', 'target': 'orc', 'damage': 10.64, 'crit': False, 'target_hp': 10.759999999999998}, {'attacker': 'orc', 'target': 'player', 'damage': 18.94, 'crit': True, 'target_hp': 146.97000000000003}]}, {'player HP': 134.92000000000002, 'enemy HP': 3.309999999999998, 'report': [{'attacker': 'player', 'target': 'orc', 'damage': 7.45, 'crit': False, 'target_hp': 3.309999999999998}, {'attacker': 'orc', 'target': 'player', 'damage': 12.05, 'crit': False, 'target_hp': 134.92000000000002}]}, {'player HP': 134.92000000000002, 'enemy HP': 0, 'report': [{'attacker': 'player', 'target': 'orc', 'damage': 12.74, 'crit': True, 'target_hp': 0}]}]}}
+2025-11-23 14:49:08,309 UTC | INFO | game.gameplay.entities.player | 1 floor passed for player
+2025-11-23 14:49:08,309 UTC | INFO | game.engine | player is currently at 1. HP: 134.92000000000002
+2025-11-23 14:49:08,329 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 14:49:08,330 UTC | INFO | game.builder | paths generared for floor 1: [{'risk': 'high_risk', 'hint_id': 'ominous_sounds', 'hint_text': 'Ominous sounds echo ahead...'}, {'risk': 'medium_risk', 'hint_id': 'merchant', 'hint_text': 'A mysterious merchant appears...'}, {'risk': 'low_risk', 'hint_id': 'gentle_breeze', 'hint_text': 'A gentle breeze guides you...'}]
+2025-11-23 14:49:08,350 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 15:07:22,178 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 15:07:28,782 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 15:07:31,624 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 15:07:35,366 UTC | INFO | game.builder | player has been created with fr language used from previous session
+2025-11-23 15:07:35,409 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 15:07:35,422 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-23 15:07:35,422 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-23 15:07:35,423 UTC | INFO | game.engine | player's game_loop is initialized
+2025-11-23 15:07:35,447 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 15:07:35,447 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-23 15:07:40,299 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 15:07:40,300 UTC | INFO | game.builder | paths generared for floor 0: [{'risk': 'high_risk', 'hint_id': 'ominous_sounds', 'hint_text': 'Des sons inquiétants résonnent devant...'}, {'risk': 'medium_risk', 'hint_id': 'lost_child', 'hint_text': "Un enfant perdu demande de l'aide..."}, {'risk': 'low_risk', 'hint_id': 'gut_feeling', 'hint_text': "Mon instinct dit que c'est un bon chemin"}]
+2025-11-23 15:08:51,209 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 15:08:51,235 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 15:08:51,235 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: thief;
+hp: 23;
+attack: 8;
+speed: 26;
+loot: 2
+2025-11-23 15:08:51,236 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 6.39 damage. Target now has 16.61 HP
+2025-11-23 15:08:51,236 UTC | INFO | game.gameplay.entities.entities | thief attacked player and dealt 11.24 damage (CRIT DMG). Target now has 188.76 HP
+2025-11-23 15:08:51,236 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 10.01 damage. Target now has 6.6 HP
+2025-11-23 15:08:51,236 UTC | INFO | game.gameplay.entities.entities | thief attacked player and dealt 10.29 damage (CRIT DMG). Target now has 178.47 HP
+2025-11-23 15:08:51,236 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 14.87 damage (CRIT DMG). Target now has 0 HP
+2025-11-23 15:08:51,236 UTC | INFO | game.gameplay.entities.player | 1 floor passed for player
+2025-11-23 15:08:56,467 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-23 15:08:56,467 UTC | INFO | game.builder | paths generared for floor 1: [{'risk': 'high_risk', 'hint_id': 'mist', 'hint_text': 'Quelque chose se cache dans la brume...'}, {'risk': 'medium_risk', 'hint_id': 'campfire', 'hint_text': 'Un feu de camp brille devant...'}, {'risk': 'low_risk', 'hint_id': 'gentle_breeze', 'hint_text': 'Une brise douce vous guide...'}]
+2025-11-23 15:09:16,570 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml

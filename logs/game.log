@@ -1,0 +1,196 @@
+2025-11-23 11:00:05,974 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:00:28,424 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:00:58,415 UTC | INFO | game.builder | player has been created with en language used from previous session
+2025-11-23 11:00:58,434 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:00:58,486 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-23 11:00:58,486 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-23 11:00:58,487 UTC | INFO | game.engine | player's game_loop is initialized
+2025-11-23 11:00:58,487 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-23 11:00:58,487 UTC | INFO | game.engine | player is currently at 0. HP: 200
+2025-11-23 11:00:58,505 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:00:58,505 UTC | INFO | game.builder | paths generared for floor 0: [{'risk': 'high_risk', 'hint_id': 'mist', 'hint_text': 'Something hides in the mist...'}, {'risk': 'medium_risk', 'hint_id': 'whispers', 'hint_text': 'Voices whisper in the distance...'}, {'risk': 'low_risk', 'hint_id': 'gentle_breeze', 'hint_text': 'A gentle breeze guides you...'}]
+2025-11-23 11:00:58,561 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:00:58,646 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:00:58,646 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: troll;
+hp: 71;
+attack: 18;
+speed: 4;
+loot: 10
+2025-11-23 11:00:58,647 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 7.88 damage. Target now has 63.12 HP
+2025-11-23 11:00:58,647 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 24.5 damage (CRIT DMG). Target now has 175.5 HP
+2025-11-23 11:00:58,647 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 7.38 damage. Target now has 55.739999999999995 HP
+2025-11-23 11:00:58,647 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 17.62 damage. Target now has 157.88 HP
+2025-11-23 11:00:58,647 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 11.74 damage. Target now has 43.99999999999999 HP
+2025-11-23 11:00:58,647 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 14.96 damage. Target now has 142.92 HP
+2025-11-23 11:00:58,648 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 14.78 damage (CRIT DMG). Target now has 29.21999999999999 HP
+2025-11-23 11:00:58,648 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 17.83 damage. Target now has 125.08999999999999 HP
+2025-11-23 11:00:58,648 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 7.93 damage. Target now has 21.289999999999992 HP
+2025-11-23 11:00:58,648 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 18.54 damage. Target now has 106.54999999999998 HP
+2025-11-23 11:00:58,648 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 7.57 damage. Target now has 13.719999999999992 HP
+2025-11-23 11:00:58,648 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 17.17 damage. Target now has 89.37999999999998 HP
+2025-11-23 11:00:58,648 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 12.96 damage (CRIT DMG). Target now has 0.7599999999999909 HP
+2025-11-23 11:00:58,648 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 19.61 damage. Target now has 69.76999999999998 HP
+2025-11-23 11:00:58,648 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 7.03 damage. Target now has 0 HP
+2025-11-23 11:00:58,648 UTC | INFO | game.engine | player executed {'type': 'summon enemy', 'value': 'troll', 'report': {'winner': 'player', 'remaining_hp': 69.76999999999998, 'turns': 8, 'report': [{'player HP': 175.5, 'enemy HP': 63.12, 'report': [{'attacker': 'player', 'target': 'troll', 'damage': 7.88, 'crit': False, 'target_hp': 63.12}, {'attacker': 'troll', 'target': 'player', 'damage': 24.5, 'crit': True, 'target_hp': 175.5}]}, {'player HP': 157.88, 'enemy HP': 55.739999999999995, 'report': [{'attacker': 'player', 'target': 'troll', 'damage': 7.38, 'crit': False, 'target_hp': 55.739999999999995}, {'attacker': 'troll', 'target': 'player', 'damage': 17.62, 'crit': False, 'target_hp': 157.88}]}, {'player HP': 142.92, 'enemy HP': 43.99999999999999, 'report': [{'attacker': 'player', 'target': 'troll', 'damage': 11.74, 'crit': False, 'target_hp': 43.99999999999999}, {'attacker': 'troll', 'target': 'player', 'damage': 14.96, 'crit': False, 'target_hp': 142.92}]}, {'player HP': 125.08999999999999, 'enemy HP': 29.21999999999999, 'report': [{'attacker': 'player', 'target': 'troll', 'damage': 14.78, 'crit': True, 'target_hp': 29.21999999999999}, {'attacker': 'troll', 'target': 'player', 'damage': 17.83, 'crit': False, 'target_hp': 125.08999999999999}]}, {'player HP': 106.54999999999998, 'enemy HP': 21.289999999999992, 'report': [{'attacker': 'player', 'target': 'troll', 'damage': 7.93, 'crit': False, 'target_hp': 21.289999999999992}, {'attacker': 'troll', 'target': 'player', 'damage': 18.54, 'crit': False, 'target_hp': 106.54999999999998}]}, {'player HP': 89.37999999999998, 'enemy HP': 13.719999999999992, 'report': [{'attacker': 'player', 'target': 'troll', 'damage': 7.57, 'crit': False, 'target_hp': 13.719999999999992}, {'attacker': 'troll', 'target': 'player', 'damage': 17.17, 'crit': False, 'target_hp': 89.37999999999998}]}, {'player HP': 69.76999999999998, 'enemy HP': 0.7599999999999909, 'report': [{'attacker': 'player', 'target': 'troll', 'damage': 12.96, 'crit': True, 'target_hp': 0.7599999999999909}, {'attacker': 'troll', 'target': 'player', 'damage': 19.61, 'crit': False, 'target_hp': 69.76999999999998}]}, {'player HP': 69.76999999999998, 'enemy HP': 0, 'report': [{'attacker': 'player', 'target': 'troll', 'damage': 7.03, 'crit': False, 'target_hp': 0}]}]}}
+2025-11-23 11:00:58,649 UTC | INFO | game.gameplay.entities.player | 1 floor passed for player
+2025-11-23 11:00:58,649 UTC | INFO | game.engine | player is currently at 1. HP: 69.76999999999998
+2025-11-23 11:00:58,668 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:00:58,668 UTC | INFO | game.builder | paths generared for floor 1: [{'risk': 'high_risk', 'hint_id': 'blood_stains', 'hint_text': 'Blood stains mark the ground...'}, {'risk': 'medium_risk', 'hint_id': 'lost_child', 'hint_text': 'A lost child asks for help...'}, {'risk': 'low_risk', 'hint_id': 'sunlight', 'hint_text': 'Sunlight breaks through the clouds...'}]
+2025-11-23 11:00:58,686 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:00:58,706 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:00:58,706 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: dragon;
+hp: 136;
+attack: 26;
+speed: 13;
+loot: 15
+2025-11-23 11:00:58,706 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 13.84 damage (CRIT DMG). Target now has 122.16 HP
+2025-11-23 11:00:58,706 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 33.49 damage (CRIT DMG). Target now has 36.27999999999998 HP
+2025-11-23 11:00:58,706 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 11.25 damage. Target now has 110.91 HP
+2025-11-23 11:00:58,707 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 27.45 damage. Target now has 8.82999999999998 HP
+2025-11-23 11:00:58,707 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 14.01 damage (CRIT DMG). Target now has 96.89999999999999 HP
+2025-11-23 11:00:58,707 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 31.67 damage (CRIT DMG). Target now has 0 HP
+2025-11-23 11:00:58,707 UTC | INFO | game.engine | player executed {'type': 'summon enemy', 'value': 'dragon', 'report': {'winner': 'dragon', 'remaining_hp': 0, 'turns': 3, 'report': [{'player HP': 36.27999999999998, 'enemy HP': 122.16, 'report': [{'attacker': 'player', 'target': 'dragon', 'damage': 13.84, 'crit': True, 'target_hp': 122.16}, {'attacker': 'dragon', 'target': 'player', 'damage': 33.49, 'crit': True, 'target_hp': 36.27999999999998}]}, {'player HP': 8.82999999999998, 'enemy HP': 110.91, 'report': [{'attacker': 'player', 'target': 'dragon', 'damage': 11.25, 'crit': False, 'target_hp': 110.91}, {'attacker': 'dragon', 'target': 'player', 'damage': 27.45, 'crit': False, 'target_hp': 8.82999999999998}]}, {'player HP': 0, 'enemy HP': 96.89999999999999, 'report': [{'attacker': 'player', 'target': 'dragon', 'damage': 14.01, 'crit': True, 'target_hp': 96.89999999999999}, {'attacker': 'dragon', 'target': 'player', 'damage': 31.67, 'crit': True, 'target_hp': 0}]}]}}
+2025-11-23 11:00:58,707 UTC | INFO | game.gameplay.entities.player | 1 floor passed for player
+2025-11-23 11:00:58,707 UTC | INFO | game.gameplay.entities.player | player has made their first run ever.
+Floor: 2
+Duration: 0.22032523155212402
+2025-11-23 11:00:58,707 UTC | INFO | game.engine | player player died at 2
+2025-11-23 11:01:05,064 UTC | INFO | game.builder | player has been created with en language used from previous session
+2025-11-23 11:01:05,096 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,096 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-23 11:01:05,097 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-23 11:01:05,097 UTC | INFO | game.engine | player's game_loop is initialized
+2025-11-23 11:01:05,098 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-23 11:01:05,098 UTC | INFO | game.engine | player is currently at 0. HP: 200
+2025-11-23 11:01:05,132 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,133 UTC | INFO | game.builder | paths generared for floor 0: [{'risk': 'high_risk', 'hint_id': 'foul_smell', 'hint_text': 'A foul smell fills the air...'}, {'risk': 'medium_risk', 'hint_id': 'lost_child', 'hint_text': 'A lost child asks for help...'}, {'risk': 'low_risk', 'hint_id': 'peaceful_sounds', 'hint_text': 'Peaceful sounds ahead...'}]
+2025-11-23 11:01:05,151 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,152 UTC | INFO | game.engine | player executed {'type': 'heal', 'value': 14}
+2025-11-23 11:01:05,152 UTC | INFO | game.gameplay.entities.player | 1 floor passed for player
+2025-11-23 11:01:05,152 UTC | INFO | game.engine | player is currently at 1. HP: 214
+2025-11-23 11:01:05,171 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,171 UTC | INFO | game.builder | paths generared for floor 1: [{'risk': 'high_risk', 'hint_id': 'foul_smell', 'hint_text': 'A foul smell fills the air...'}, {'risk': 'medium_risk', 'hint_id': 'lost_child', 'hint_text': 'A lost child asks for help...'}, {'risk': 'low_risk', 'hint_id': 'sunlight', 'hint_text': 'Sunlight breaks through the clouds...'}]
+2025-11-23 11:01:05,191 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,192 UTC | INFO | game.engine | player executed {'type': 'heal', 'value': 30}
+2025-11-23 11:01:05,192 UTC | INFO | game.gameplay.entities.player | 1 floor passed for player
+2025-11-23 11:01:05,192 UTC | INFO | game.engine | player is currently at 2. HP: 244
+2025-11-23 11:01:05,210 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,211 UTC | INFO | game.builder | paths generared for floor 2: [{'risk': 'high_risk', 'hint_id': 'mist', 'hint_text': 'Something hides in the mist...'}, {'risk': 'medium_risk', 'hint_id': 'lost_child', 'hint_text': 'A lost child asks for help...'}, {'risk': 'low_risk', 'hint_id': 'gut_feeling', 'hint_text': "My gut feeling says it's a good path"}]
+2025-11-23 11:01:05,231 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,250 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,250 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: bandit;
+hp: 36;
+attack: 10;
+speed: 8;
+loot: 6
+2025-11-23 11:01:05,250 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 10.79 damage. Target now has 25.21 HP
+2025-11-23 11:01:05,250 UTC | INFO | game.gameplay.entities.entities | bandit attacked player and dealt 12.23 damage (CRIT DMG). Target now has 231.77 HP
+2025-11-23 11:01:05,251 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 8.65 damage. Target now has 16.560000000000002 HP
+2025-11-23 11:01:05,251 UTC | INFO | game.gameplay.entities.entities | bandit attacked player and dealt 14.73 damage (CRIT DMG). Target now has 217.04000000000002 HP
+2025-11-23 11:01:05,251 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 10.22 damage. Target now has 6.340000000000002 HP
+2025-11-23 11:01:05,251 UTC | INFO | game.gameplay.entities.entities | bandit attacked player and dealt 10.19 damage. Target now has 206.85000000000002 HP
+2025-11-23 11:01:05,251 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 10.31 damage. Target now has 0 HP
+2025-11-23 11:01:05,251 UTC | INFO | game.engine | player executed {'type': 'summon enemy', 'value': 'bandit', 'report': {'winner': 'player', 'remaining_hp': 206.85000000000002, 'turns': 4, 'report': [{'player HP': 231.77, 'enemy HP': 25.21, 'report': [{'attacker': 'player', 'target': 'bandit', 'damage': 10.79, 'crit': False, 'target_hp': 25.21}, {'attacker': 'bandit', 'target': 'player', 'damage': 12.23, 'crit': True, 'target_hp': 231.77}]}, {'player HP': 217.04000000000002, 'enemy HP': 16.560000000000002, 'report': [{'attacker': 'player', 'target': 'bandit', 'damage': 8.65, 'crit': False, 'target_hp': 16.560000000000002}, {'attacker': 'bandit', 'target': 'player', 'damage': 14.73, 'crit': True, 'target_hp': 217.04000000000002}]}, {'player HP': 206.85000000000002, 'enemy HP': 6.340000000000002, 'report': [{'attacker': 'player', 'target': 'bandit', 'damage': 10.22, 'crit': False, 'target_hp': 6.340000000000002}, {'attacker': 'bandit', 'target': 'player', 'damage': 10.19, 'crit': False, 'target_hp': 206.85000000000002}]}, {'player HP': 206.85000000000002, 'enemy HP': 0, 'report': [{'attacker': 'player', 'target': 'bandit', 'damage': 10.31, 'crit': False, 'target_hp': 0}]}]}}
+2025-11-23 11:01:05,251 UTC | INFO | game.gameplay.entities.player | 1 floor passed for player
+2025-11-23 11:01:05,251 UTC | INFO | game.engine | player is currently at 3. HP: 206.85000000000002
+2025-11-23 11:01:05,271 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,272 UTC | INFO | game.builder | paths generared for floor 3: [{'risk': 'high_risk', 'hint_id': 'foul_smell', 'hint_text': 'A foul smell fills the air...'}, {'risk': 'medium_risk', 'hint_id': 'whispers', 'hint_text': 'Voices whisper in the distance...'}, {'risk': 'low_risk', 'hint_id': 'gentle_breeze', 'hint_text': 'A gentle breeze guides you...'}]
+2025-11-23 11:01:05,290 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,310 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,311 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: thief;
+hp: 21;
+attack: 9;
+speed: 19;
+loot: 2
+2025-11-23 11:01:05,311 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 8.24 damage. Target now has 12.76 HP
+2025-11-23 11:01:05,311 UTC | INFO | game.gameplay.entities.entities | thief attacked player and dealt 11.09 damage (CRIT DMG). Target now has 195.76000000000002 HP
+2025-11-23 11:01:05,311 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 10.3 damage. Target now has 2.459999999999999 HP
+2025-11-23 11:01:05,311 UTC | INFO | game.gameplay.entities.entities | thief attacked player and dealt 12.9 damage (CRIT DMG). Target now has 182.86 HP
+2025-11-23 11:01:05,311 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 14.22 damage (CRIT DMG). Target now has 0 HP
+2025-11-23 11:01:05,311 UTC | INFO | game.engine | player executed {'type': 'summon enemy', 'value': 'thief', 'report': {'winner': 'player', 'remaining_hp': 182.86, 'turns': 3, 'report': [{'player HP': 195.76000000000002, 'enemy HP': 12.76, 'report': [{'attacker': 'player', 'target': 'thief', 'damage': 8.24, 'crit': False, 'target_hp': 12.76}, {'attacker': 'thief', 'target': 'player', 'damage': 11.09, 'crit': True, 'target_hp': 195.76000000000002}]}, {'player HP': 182.86, 'enemy HP': 2.459999999999999, 'report': [{'attacker': 'player', 'target': 'thief', 'damage': 10.3, 'crit': False, 'target_hp': 2.459999999999999}, {'attacker': 'thief', 'target': 'player', 'damage': 12.9, 'crit': True, 'target_hp': 182.86}]}, {'player HP': 182.86, 'enemy HP': 0, 'report': [{'attacker': 'player', 'target': 'thief', 'damage': 14.22, 'crit': True, 'target_hp': 0}]}]}}
+2025-11-23 11:01:05,312 UTC | INFO | game.gameplay.entities.player | 1 floor passed for player
+2025-11-23 11:01:05,312 UTC | INFO | game.engine | player is currently at 4. HP: 182.86
+2025-11-23 11:01:05,331 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,331 UTC | INFO | game.builder | paths generared for floor 4: [{'risk': 'high_risk', 'hint_id': 'ominous_sounds', 'hint_text': 'Ominous sounds echo ahead...'}, {'risk': 'medium_risk', 'hint_id': 'whispers', 'hint_text': 'Voices whisper in the distance...'}, {'risk': 'low_risk', 'hint_id': 'sunlight', 'hint_text': 'Sunlight breaks through the clouds...'}]
+2025-11-23 11:01:05,349 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,368 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,368 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: rogue;
+hp: 34;
+attack: 10;
+speed: 24;
+loot: 3
+2025-11-23 11:01:05,368 UTC | INFO | game.gameplay.entities.entities | player attacked rogue and dealt 8.66 damage. Target now has 25.34 HP
+2025-11-23 11:01:05,368 UTC | INFO | game.gameplay.entities.entities | rogue attacked player and dealt 7.46 damage. Target now has 175.4 HP
+2025-11-23 11:01:05,368 UTC | INFO | game.gameplay.entities.entities | player attacked rogue and dealt 10.04 damage. Target now has 15.3 HP
+2025-11-23 11:01:05,368 UTC | INFO | game.gameplay.entities.entities | rogue attacked player and dealt 13.3 damage (CRIT DMG). Target now has 162.1 HP
+2025-11-23 11:01:05,368 UTC | INFO | game.gameplay.entities.entities | player attacked rogue and dealt 11.23 damage. Target now has 4.07 HP
+2025-11-23 11:01:05,369 UTC | INFO | game.gameplay.entities.entities | rogue attacked player and dealt 13.37 damage (CRIT DMG). Target now has 148.73 HP
+2025-11-23 11:01:05,369 UTC | INFO | game.gameplay.entities.entities | player attacked rogue and dealt 8.0 damage. Target now has 0 HP
+2025-11-23 11:01:05,369 UTC | INFO | game.engine | player executed {'type': 'summon enemy', 'value': 'rogue', 'report': {'winner': 'player', 'remaining_hp': 148.73, 'turns': 4, 'report': [{'player HP': 175.4, 'enemy HP': 25.34, 'report': [{'attacker': 'player', 'target': 'rogue', 'damage': 8.66, 'crit': False, 'target_hp': 25.34}, {'attacker': 'rogue', 'target': 'player', 'damage': 7.46, 'crit': False, 'target_hp': 175.4}]}, {'player HP': 162.1, 'enemy HP': 15.3, 'report': [{'attacker': 'player', 'target': 'rogue', 'damage': 10.04, 'crit': False, 'target_hp': 15.3}, {'attacker': 'rogue', 'target': 'player', 'damage': 13.3, 'crit': True, 'target_hp': 162.1}]}, {'player HP': 148.73, 'enemy HP': 4.07, 'report': [{'attacker': 'player', 'target': 'rogue', 'damage': 11.23, 'crit': False, 'target_hp': 4.07}, {'attacker': 'rogue', 'target': 'player', 'damage': 13.37, 'crit': True, 'target_hp': 148.73}]}, {'player HP': 148.73, 'enemy HP': 0, 'report': [{'attacker': 'player', 'target': 'rogue', 'damage': 8.0, 'crit': False, 'target_hp': 0}]}]}}
+2025-11-23 11:01:05,369 UTC | INFO | game.gameplay.entities.player | 1 floor passed for player
+2025-11-23 11:01:05,369 UTC | INFO | game.engine | player is currently at 5. HP: 148.73
+2025-11-23 11:01:05,387 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,387 UTC | INFO | game.builder | paths generared for floor 5: [{'risk': 'high_risk', 'hint_id': 'blood_stains', 'hint_text': 'Blood stains mark the ground...'}, {'risk': 'medium_risk', 'hint_id': 'lost_child', 'hint_text': 'A lost child asks for help...'}, {'risk': 'low_risk', 'hint_id': 'sunlight', 'hint_text': 'Sunlight breaks through the clouds...'}]
+2025-11-23 11:01:05,405 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,424 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,424 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: assassin;
+hp: 19;
+attack: 20;
+speed: 12;
+loot: 7
+2025-11-23 11:01:05,424 UTC | INFO | game.gameplay.entities.entities | player attacked assassin and dealt 12.94 damage (CRIT DMG). Target now has 6.0600000000000005 HP
+2025-11-23 11:01:05,425 UTC | INFO | game.gameplay.entities.entities | assassin attacked player and dealt 21.58 damage. Target now has 127.14999999999999 HP
+2025-11-23 11:01:05,425 UTC | INFO | game.gameplay.entities.entities | player attacked assassin and dealt 10.97 damage. Target now has 0 HP
+2025-11-23 11:01:05,425 UTC | INFO | game.engine | player executed {'type': 'summon enemy', 'value': 'assassin', 'report': {'winner': 'player', 'remaining_hp': 127.14999999999999, 'turns': 2, 'report': [{'player HP': 127.14999999999999, 'enemy HP': 6.0600000000000005, 'report': [{'attacker': 'player', 'target': 'assassin', 'damage': 12.94, 'crit': True, 'target_hp': 6.0600000000000005}, {'attacker': 'assassin', 'target': 'player', 'damage': 21.58, 'crit': False, 'target_hp': 127.14999999999999}]}, {'player HP': 127.14999999999999, 'enemy HP': 0, 'report': [{'attacker': 'player', 'target': 'assassin', 'damage': 10.97, 'crit': False, 'target_hp': 0}]}]}}
+2025-11-23 11:01:05,425 UTC | INFO | game.gameplay.entities.player | 1 floor passed for player
+2025-11-23 11:01:05,425 UTC | INFO | game.engine | player is currently at 6. HP: 127.14999999999999
+2025-11-23 11:01:05,444 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,444 UTC | INFO | game.builder | paths generared for floor 6: [{'risk': 'high_risk', 'hint_id': 'blood_stains', 'hint_text': 'Blood stains mark the ground...'}, {'risk': 'medium_risk', 'hint_id': 'whispers', 'hint_text': 'Voices whisper in the distance...'}, {'risk': 'low_risk', 'hint_id': 'sunlight', 'hint_text': 'Sunlight breaks through the clouds...'}]
+2025-11-23 11:01:05,463 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,483 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 11:01:05,483 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: dragon;
+hp: 128;
+attack: 22;
+speed: 9;
+loot: 11
+2025-11-23 11:01:05,483 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 6.35 damage. Target now has 121.65 HP
+2025-11-23 11:01:05,483 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 18.04 damage. Target now has 109.10999999999999 HP
+2025-11-23 11:01:05,483 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 14.36 damage (CRIT DMG). Target now has 107.29 HP
+2025-11-23 11:01:05,483 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 28.66 damage (CRIT DMG). Target now has 80.44999999999999 HP
+2025-11-23 11:01:05,483 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 7.47 damage. Target now has 99.82000000000001 HP
+2025-11-23 11:01:05,483 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 24.26 damage. Target now has 56.18999999999998 HP
+2025-11-23 11:01:05,484 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 9.52 damage. Target now has 90.30000000000001 HP
+2025-11-23 11:01:05,484 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 19.24 damage. Target now has 36.94999999999999 HP
+2025-11-23 11:01:05,484 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 12.39 damage (CRIT DMG). Target now has 77.91000000000001 HP
+2025-11-23 11:01:05,484 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 31.49 damage (CRIT DMG). Target now has 5.45999999999999 HP
+2025-11-23 11:01:05,484 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 11.34 damage. Target now has 66.57000000000001 HP
+2025-11-23 11:01:05,484 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 18.03 damage. Target now has 0 HP
+2025-11-23 11:01:05,484 UTC | INFO | game.engine | player executed {'type': 'summon enemy', 'value': 'dragon', 'report': {'winner': 'dragon', 'remaining_hp': 0, 'turns': 6, 'report': [{'player HP': 109.10999999999999, 'enemy HP': 121.65, 'report': [{'attacker': 'player', 'target': 'dragon', 'damage': 6.35, 'crit': False, 'target_hp': 121.65}, {'attacker': 'dragon', 'target': 'player', 'damage': 18.04, 'crit': False, 'target_hp': 109.10999999999999}]}, {'player HP': 80.44999999999999, 'enemy HP': 107.29, 'report': [{'attacker': 'player', 'target': 'dragon', 'damage': 14.36, 'crit': True, 'target_hp': 107.29}, {'attacker': 'dragon', 'target': 'player', 'damage': 28.66, 'crit': True, 'target_hp': 80.44999999999999}]}, {'player HP': 56.18999999999998, 'enemy HP': 99.82000000000001, 'report': [{'attacker': 'player', 'target': 'dragon', 'damage': 7.47, 'crit': False, 'target_hp': 99.82000000000001}, {'attacker': 'dragon', 'target': 'player', 'damage': 24.26, 'crit': False, 'target_hp': 56.18999999999998}]}, {'player HP': 36.94999999999999, 'enemy HP': 90.30000000000001, 'report': [{'attacker': 'player', 'target': 'dragon', 'damage': 9.52, 'crit': False, 'target_hp': 90.30000000000001}, {'attacker': 'dragon', 'target': 'player', 'damage': 19.24, 'crit': False, 'target_hp': 36.94999999999999}]}, {'player HP': 5.45999999999999, 'enemy HP': 77.91000000000001, 'report': [{'attacker': 'player', 'target': 'dragon', 'damage': 12.39, 'crit': True, 'target_hp': 77.91000000000001}, {'attacker': 'dragon', 'target': 'player', 'damage': 31.49, 'crit': True, 'target_hp': 5.45999999999999}]}, {'player HP': 0, 'enemy HP': 66.57000000000001, 'report': [{'attacker': 'player', 'target': 'dragon', 'damage': 11.34, 'crit': False, 'target_hp': 66.57000000000001}, {'attacker': 'dragon', 'target': 'player', 'damage': 18.03, 'crit': False, 'target_hp': 0}]}]}}
+2025-11-23 11:01:05,484 UTC | INFO | game.gameplay.entities.player | 1 floor passed for player
+2025-11-23 11:01:05,484 UTC | INFO | game.gameplay.entities.player | player has made their first run ever.
+Floor: 7
+Duration: 0.3866889476776123
+2025-11-23 11:01:05,484 UTC | INFO | game.engine | player player died at 7
+2025-11-23 12:05:55,810 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-23 12:07:53,011 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml

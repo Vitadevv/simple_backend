@@ -25,6 +25,8 @@ log = logging.getLogger(__name__)
    # stats: "[2] - STATISTICS"
    # settings: "[3] - SETTINGS"
     #exit: "[4] - EXIT"
+
+  #settings_options: "Choose Language:\n[1] - English\n[2] - French\n[3] - EXIT"
   
   #description: "Welcome to Dungeon Master! This is a simple crawler game where you navigate through floors filled with enemies, traps, and treasures. Choose your path wisely and try to reach the highest floor possible!  Good luck, adventurer!"
   #under_development: "This feature is under development. Please check back later!"
@@ -78,7 +80,7 @@ def slow_print(text: str, delay: float = 0.05, hold: float = 1.5):
 def menu():
   from game.builder import create_player
   from game.engine import game_loop
-  from game.config.loader import get_current_language, get_menu
+  from game.config.loader import get_current_language, get_menu, set_current_language
 
   #BUTTONS
   @wrap_equal
@@ -101,11 +103,10 @@ def menu():
     print(config_menu["buttons"]["exit"])
 
 
-  language = get_current_language()
-  config_menu = get_menu(language)
-
-
   while True:
+    language = get_current_language()
+    config_menu = get_menu(language)   #defaults to english
+    
     title()
     guide()
     start_game()
@@ -129,7 +130,24 @@ def menu():
 
     #settings
     elif player_choice == "3":
-      slow_print(config_menu["under_development"])
+      while True:
+        print(config_menu["settings_options"])
+        lang_option = input("")
+        if lang_option == "1":
+          set_current_language("en")
+          config_menu = get_menu("en") #this reloads cfg
+          slow_print("Language set to English.", hold=1)
+          break
+        elif lang_option == "2":
+          set_current_language("fr")
+          config_menu = get_menu("fr") #this reloads cfg
+          slow_print("Langue définie sur le français.", hold=1)
+          break
+        elif lang_option == "3":
+          slow_print("Exiting settings.", hold=1)
+          break
+        else:
+          slow_print("Invalid option. Please choose a valid option (1-3).", hold=1)
 
     #exit  
     elif player_choice == "4":

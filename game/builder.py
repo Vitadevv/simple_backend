@@ -51,6 +51,19 @@ def create_3_paths(floor: int, language: str = None) -> list[dict]:
   """
   Generates 3 paths for player to choose from (config["game"] has it all).
   Returns a list WITH DICTIONARIES 
+
+  RETURNS:
+
+  [
+  {"risk": "high_risk", "hint_id": "mist", "hint_text": "..."},
+  {"risk": "medium_risk", "hint_id": "lost_child", "hint_text": "..."},
+  {"risk": "low_risk", "hint_id": "gut_feeling", "hint_text": "..."}
+  ]
+
+  SO if paths_generated = create_3_paths(...), 
+  THEN the VALUE during every iteration is considered a 
+  SEPARATE DICTIONARY
+
   """
 
   from game.gameplay.entities.player import Player
@@ -114,14 +127,17 @@ def create_event(player: Player, chosen_path: dict, language: str = None): # typ
 
   from game.gameplay.entities.player import Player
   from game.config.loader import load_config, get_current_language
-
+  from game.menu.menu_terminal import slow_print
   from game.gameplay.events.events import (
-  floor_down_event, poison_event, summon_enemy_event, heal_event, random_item_event, floor_up_event, add_coins_event
+  floor_down_event, poison_event, summon_enemy_event, heal_event, 
+  random_item_event, floor_up_event, add_coins_event
   )
   
+
   if language is None:
     language = get_current_language()
-    
+
+
   #extracting event probabilities  
   config = load_config(language)
   risk = chosen_path["risk"]
