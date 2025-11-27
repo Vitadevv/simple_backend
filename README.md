@@ -2,6 +2,8 @@
 
 Turn-based dungeon crawler game playable in the terminal. Navigate through procedurally generated floors, battle enemies, collect equipment, and survive as long as possible!
 
+![Dungeon Master](./dungeon_master.jpg)
+
 ## 🎮 Quick Start
 
 ```bash
