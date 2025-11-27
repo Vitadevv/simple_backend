@@ -58,7 +58,7 @@ def floor_up_event(player: Player): # type: ignore
     _amount = 2
   player.floor += _amount
   return {
-  "type": "floor up",
+  "type": "floor_up",
   "value": _amount
   } 
 
@@ -99,7 +99,7 @@ def summon_enemy_event(player: Player, enemy: Optional[str] = None): # type: ign
     
   res = fight_to_death(player, opponent)
   return {
-  "type": "summon enemy",
+  "type": "enemy",
   "value": opponent.name,
   "report": res
   }
@@ -107,15 +107,13 @@ def summon_enemy_event(player: Player, enemy: Optional[str] = None): # type: ign
 def poison_event(player: Player): # type: ignore
   from game.gameplay.entities.player import Player
 
-  _fixed_player_floor = player.floor
-  while player.floor == _fixed_player_floor:
-    player.hp -= 10
-    if player.is_alive():
-      player.attack *= uniform(0.5, 0.9)
+  damage = randint(10, 30)
+  player.hp -= damage
+
   return {
-  "type": "poison player",
-  "value": None
-  } 
+  "type": "poison",
+  "value": damage
+  }
   
 
 def floor_down_event(player: Player): # type: ignore
@@ -126,7 +124,7 @@ def floor_down_event(player: Player): # type: ignore
     _amount = 2
   player.floor = max(0, player.floor-_amount)
   return {
-  "type": "floor down",
+  "type": "floor_down",
   "value": _amount
   } 
   

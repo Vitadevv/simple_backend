@@ -23,7 +23,11 @@ class Entity:
     
     
   def heal(self, value: int | float) -> None:
-    self.hp += value
+    # Cap healing at base_hp if available, otherwise no cap
+    if hasattr(self, 'base_hp'):
+      self.hp = min(self.hp + value, self.base_hp)
+    else:
+      self.hp += value
     
     
   def attack_target(self, target: Entity) -> dict: # type: ignore

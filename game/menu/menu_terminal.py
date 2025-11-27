@@ -84,22 +84,22 @@ def menu():
 
   #BUTTONS
   @wrap_equal
-  def title():
+  def title(config_menu):
     print(config_menu["title"])  
   @wrap_hyphen    
-  def guide():
+  def guide(config_menu):
     print(config_menu["buttons"]["guide"])  
   @wrap_hyphen    
-  def start_game():
+  def start_game_display(config_menu):
     print(config_menu["buttons"]["start_game"])      
   @wrap_hyphen    
-  def stats():
+  def stats(config_menu):
     print(config_menu["buttons"]["stats"])   
   @wrap_hyphen    
-  def settings():
+  def settings_display(config_menu):
     print(config_menu["buttons"]["settings"])      
   @wrap_hyphen    
-  def exit():
+  def exit_menu(config_menu):
     print(config_menu["buttons"]["exit"])
 
 
@@ -107,12 +107,12 @@ def menu():
     language = get_current_language()
     config_menu = get_menu(language)   #defaults to english
     
-    title()
-    guide()
-    start_game()
-    stats()
-    settings()
-    exit()
+    title(config_menu)
+    guide(config_menu)
+    start_game_display(config_menu)
+    stats(config_menu)
+    settings_display(config_menu)
+    exit_menu(config_menu)
 
     #player chooses their option
     player_choice = input(config_menu["choose_option"])

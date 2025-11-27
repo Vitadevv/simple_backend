@@ -3,6 +3,11 @@ game:
   starting_attack: 10
   starting_speed: 10
 
+risk_labels:
+  high_risk: "High Risk"
+  medium_risk: "Medium Risk"
+  low_risk: "Low Risk"
+
 paths:
   high_risk:
     base_probabilities:
@@ -236,15 +241,30 @@ menu:
   new_record: "NEW RECORD!"
 
 game_loop:
-  choose_your_path: "\nChoose you path: "
+  choose_your_path: "\nChoose your path: "
   choose_your_path_message: "\n[{}] - {}: {}"
-  event_not_found: "{} event not found"
   enter_your_choice: "\nEnter your choice (1-3): "
-  invalid_enter_number: "\nEnter a number between 1 and 3"
   invalid_input: "\nInvalid input. Please enter a number."
-  event_fallback: "event"
-
-  floor_now: "\n--- Floor {} ---"
+  event_fallback: "An event occurred but details are unclear."
+  floor_now: "\n--- Floor {} ---"   #needs fix
   hp_coins_now: "\nHP: {} | Coins: {}"
+  end_game: "\nGAME OVER"
+  new_record: "\nNEW RECORD!"
+  player_death: "\nYou have fallen... Game Over."
+  victory_message: "\nVictory! You defeated the {}!"
+  defeat_message: "\nDefeat! The {} was too strong..."
+  milestone_message: "\n*** Milestone reached! You gained {} coins! ***"
+  best_run_message: "Best floor: {} | Time: {:.1f}s"
+  event_messages:
+    enemy: "A fierce enemy appears! You must fight for your survival!"
+    poison: "You've been poisoned! Your health decreases."
+    floor_down: "You fall down a floor!"
+    heal: "You found healing! Your health is restored."
+    item: "You found an item!"
+    coins: "You found coins!"
+    "add coins": "You found coins!"
+    "random item": "You found an item!"
+    floor_up: "You ascend to the next floor!"
+    floor_down: "You fall down a floor!"
 
  

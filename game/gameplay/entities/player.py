@@ -81,7 +81,7 @@ class Player(Entity): # type: ignore
    
   def equip(self, slot: str, item: Item): # type: ignore
     from game.gameplay.equipment.items.item import Item
-    from gameplay.equipment.player_equipment import equip_item
+    from game.gameplay.equipment.player_equipment import equip_item
 
     #best option is to return it as equip_item contains returns too
     equipped = equip_item(self, slot, item)

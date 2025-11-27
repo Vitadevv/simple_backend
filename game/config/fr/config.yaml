@@ -4,6 +4,11 @@ game:
   starting_attack: 10
   starting_speed: 10
 
+risk_labels:
+  high_risk: "Risque Élevé"
+  medium_risk: "Risque Moyen"
+  low_risk: "Risque Faible"
+
 paths:
   high_risk:
     base_probabilities:
@@ -236,3 +241,29 @@ menu:
   end_game: "FIN DU JEU"
   new_record: "NOUVEAU RECORD!"
 
+game_loop:
+  choose_your_path: "\nChoisissez votre chemin : "
+  choose_your_path_message: "\n[{}] - {}: {}"
+  enter_your_choice: "\nEntrez votre choix (1-3) : "
+  invalid_input: "\nEntrée invalide. Veuillez entrer un nombre."
+  event_fallback: "Un événement s'est produit mais les détails ne sont pas clairs."
+  floor_now: "\n--- Étage {} ---"
+  hp_coins_now: "\nSanté: {} | Pièces: {}"
+  end_game: "\nFIN DU JEU"
+  new_record: "\nNOUVEAU RECORD!"
+  player_death: "\nVous êtes tombé... Fin de jeu."
+  victory_message: "\nVictoire ! Vous avez vaincu le {} !"
+  defeat_message: "\nDéfaite ! Le {} était trop puissant..."
+  milestone_message: "\n*** Vous avez atteint un jalon ! Vous avez gagné {} pièces ! ***"
+  best_run_message: "Meilleur étage : {} | Temps : {:.1f}s"
+  event_messages:
+    enemy: "Un ennemi féroce apparaît! Vous devez combattre pour votre survie!"
+    poison: "Vous avez été empoisonné! Votre santé diminue."
+    floor_down: "Vous tombez d'un étage!"
+    heal: "Vous avez trouvé une guérison! Votre santé est restaurée."
+    item: "Vous avez trouvé un objet!"
+    coins: "Vous avez trouvé des pièces!"
+    "add coins": "Vous avez trouvé des pièces!"
+    "random item": "Vous avez trouvé un objet!"
+    floor_up: "Vous montez à l'étage suivant!"
+    floor_down: "Vous tombez d'un étage!"

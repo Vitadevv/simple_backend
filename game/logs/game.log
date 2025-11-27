@@ -84,3 +84,678 @@ loot: 2
 2025-11-23 15:08:56,467 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
 2025-11-23 15:08:56,467 UTC | INFO | game.builder | paths generared for floor 1: [{'risk': 'high_risk', 'hint_id': 'mist', 'hint_text': 'Quelque chose se cache dans la brume...'}, {'risk': 'medium_risk', 'hint_id': 'campfire', 'hint_text': 'Un feu de camp brille devant...'}, {'risk': 'low_risk', 'hint_id': 'gentle_breeze', 'hint_text': 'Une brise douce vous guide...'}]
 2025-11-23 15:09:16,570 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 13:01:32,106 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 13:01:37,393 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:01:39,843 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:01:50,587 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:01:52,383 UTC | INFO | game.builder | player has been created with en language used from previous session
+2025-11-27 13:01:52,417 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:01:52,430 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-27 13:01:52,431 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-27 13:01:52,435 UTC | INFO | game.engine | player's game_loop initialized at floor 0
+2025-11-27 13:01:52,462 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:01:52,462 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-27 13:01:55,197 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:06,019 UTC | INFO | game.engine | Turn 1: player chose path with risk 'high_risk' and hint 'mist'
+2025-11-27 13:02:06,135 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:06,135 UTC | INFO | game.engine | Turn 1: Event 'poison player' occurred with value '19'
+2025-11-27 13:02:06,156 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:08,749 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:20,203 UTC | INFO | game.engine | Turn 2: player chose path with risk 'high_risk' and hint 'mist'
+2025-11-27 13:02:20,237 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:20,242 UTC | INFO | game.gameplay.entities.player | player put 1 of wooden sword in their inventory
+2025-11-27 13:02:20,275 UTC | INFO | game.gameplay.entities.player | wooden sword deleted from player's inventory because quantity reached 0
+2025-11-27 13:02:20,275 UTC | INFO | gameplay.equipment.player_equipment | player equipped wooden sword to weapon
+2025-11-27 13:02:20,275 UTC | INFO | game.gameplay.entities.player | player equipped wooden sword to weapon
+2025-11-27 13:02:20,275 UTC | INFO | game.engine | Turn 2: Event 'random item' occurred with value 'wooden sword'
+2025-11-27 13:02:20,296 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:22,867 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:30,420 UTC | INFO | game.engine | Turn 3: player chose path with risk 'medium_risk' and hint 'campfire'
+2025-11-27 13:02:30,452 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:30,561 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:30,562 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: bandit;
+hp: 39;
+attack: 11;
+speed: 17;
+loot: 6
+2025-11-27 13:02:30,562 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 21.17 damage (CRIT DMG). Target now has 17.83 HP
+2025-11-27 13:02:30,562 UTC | INFO | game.gameplay.entities.entities | bandit attacked player and dealt 14.59 damage (CRIT DMG). Target now has 185.41 HP
+2025-11-27 13:02:30,562 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 20.42 damage (CRIT DMG). Target now has 0 HP
+2025-11-27 13:02:30,562 UTC | INFO | game.engine | Turn 3: Event 'summon enemy' occurred with value 'bandit'
+2025-11-27 13:02:30,586 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:32,972 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:38,141 UTC | INFO | game.engine | Turn 4: player chose path with risk 'high_risk' and hint 'mist'
+2025-11-27 13:02:38,169 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:38,208 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:38,209 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: thief;
+hp: 24;
+attack: 9;
+speed: 11;
+loot: 1
+2025-11-27 13:02:38,209 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 17.68 damage. Target now has 6.32 HP
+2025-11-27 13:02:38,209 UTC | INFO | game.gameplay.entities.entities | thief attacked player and dealt 11.02 damage (CRIT DMG). Target now has 174.39 HP
+2025-11-27 13:02:38,209 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 14.03 damage. Target now has 0 HP
+2025-11-27 13:02:38,209 UTC | INFO | game.engine | Turn 4: Event 'summon enemy' occurred with value 'thief'
+2025-11-27 13:02:38,231 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:02:40,856 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:08:25,896 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:08:27,771 UTC | INFO | game.builder | player has been created with en language used from previous session
+2025-11-27 13:08:27,809 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:08:27,812 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-27 13:08:27,812 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-27 13:08:27,816 UTC | INFO | game.engine | player's game_loop initialized at floor 0
+2025-11-27 13:08:27,845 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:08:27,845 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-27 13:08:29,780 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:08:34,392 UTC | INFO | game.engine | Turn 1: player chose path with risk 'medium_risk' and hint 'merchant'
+2025-11-27 13:08:34,394 UTC | INFO | game.engine | Turn 1: Event 'heal' occurred with value '20'. Player HP: 200 → 220
+2025-11-27 13:08:34,441 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:08:40,122 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:08:46,539 UTC | INFO | game.engine | Turn 2: player chose path with risk 'low_risk' and hint 'gentle_breeze'
+2025-11-27 13:08:46,539 UTC | INFO | game.engine | Turn 2: Event 'floor up' occurred with value '1'. Player HP: 220 → 220
+2025-11-27 13:08:46,562 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:08:49,855 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:08:55,766 UTC | INFO | game.engine | Turn 3: player chose path with risk 'low_risk' and hint 'gentle_breeze'
+2025-11-27 13:08:55,767 UTC | INFO | game.engine | Turn 3: Event 'heal' occurred with value '16'. Player HP: 220 → 236
+2025-11-27 13:08:55,806 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:01,269 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:05,963 UTC | INFO | game.engine | Turn 4: player chose path with risk 'low_risk' and hint 'sunlight'
+2025-11-27 13:09:05,963 UTC | INFO | game.engine | Turn 4: Event 'add coins' occurred with value '28'. Player HP: 236 → 236
+2025-11-27 13:09:05,988 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:09,904 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:14,506 UTC | INFO | game.engine | Turn 5: player chose path with risk 'low_risk' and hint 'peaceful_sounds'
+2025-11-27 13:09:14,506 UTC | INFO | game.engine | Turn 5: Event 'add coins' occurred with value '20'. Player HP: 236 → 236
+2025-11-27 13:09:14,546 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:17,900 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:23,020 UTC | INFO | game.engine | Turn 6: player chose path with risk 'low_risk' and hint 'sunlight'
+2025-11-27 13:09:23,020 UTC | INFO | game.engine | Turn 6: Event 'heal' occurred with value '35'. Player HP: 236 → 271
+2025-11-27 13:09:23,056 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:28,633 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:34,253 UTC | INFO | game.engine | Turn 7: player chose path with risk 'medium_risk' and hint 'lost_child'
+2025-11-27 13:09:34,254 UTC | INFO | game.engine | Turn 7: Event 'heal' occurred with value '23'. Player HP: 271 → 294
+2025-11-27 13:09:34,275 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:40,073 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:44,429 UTC | INFO | game.engine | Turn 8: player chose path with risk 'medium_risk' and hint 'lost_child'
+2025-11-27 13:09:44,457 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:44,457 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: skeleton;
+hp: 22;
+attack: 10;
+speed: 9;
+loot: 2
+2025-11-27 13:09:44,457 UTC | INFO | game.gameplay.entities.entities | player attacked skeleton and dealt 6.1 damage. Target now has 15.9 HP
+2025-11-27 13:09:44,457 UTC | INFO | game.gameplay.entities.entities | skeleton attacked player and dealt 14.36 damage (CRIT DMG). Target now has 279.64 HP
+2025-11-27 13:09:44,457 UTC | INFO | game.gameplay.entities.entities | player attacked skeleton and dealt 7.69 damage. Target now has 8.21 HP
+2025-11-27 13:09:44,457 UTC | INFO | game.gameplay.entities.entities | skeleton attacked player and dealt 6.96 damage. Target now has 272.68 HP
+2025-11-27 13:09:44,457 UTC | INFO | game.gameplay.entities.entities | player attacked skeleton and dealt 12.0 damage. Target now has 0 HP
+2025-11-27 13:09:44,457 UTC | INFO | game.engine | Turn 8: Event 'summon enemy' occurred with value 'skeleton'. Player HP: 294 → 272.68
+2025-11-27 13:09:44,501 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:47,900 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:53,197 UTC | INFO | game.engine | Turn 9: player chose path with risk 'low_risk' and hint 'blood_stains'
+2025-11-27 13:09:53,197 UTC | INFO | game.engine | Turn 9: Event 'floor up' occurred with value '1'. Player HP: 272.68 → 272.68
+2025-11-27 13:09:53,245 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:09:57,694 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:14,561 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:16,468 UTC | INFO | game.builder | player has been created with en language used from previous session
+2025-11-27 13:14:16,492 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:16,497 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-27 13:14:16,497 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-27 13:14:16,498 UTC | INFO | game.engine | player's game_loop initialized at floor 0
+2025-11-27 13:14:16,536 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:16,536 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-27 13:14:18,386 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:23,240 UTC | INFO | game.engine | Turn 1: player chose path with risk 'medium_risk' and hint 'lost_child'
+2025-11-27 13:14:23,280 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:23,281 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: troll;
+hp: 77;
+attack: 13;
+speed: 5;
+loot: 9
+2025-11-27 13:14:23,281 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 14.39 damage (CRIT DMG). Target now has 62.61 HP
+2025-11-27 13:14:23,281 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 11.1 damage. Target now has 188.9 HP
+2025-11-27 13:14:23,281 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 9.98 damage. Target now has 52.629999999999995 HP
+2025-11-27 13:14:23,281 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 12.34 damage. Target now has 176.56 HP
+2025-11-27 13:14:23,281 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 13.88 damage (CRIT DMG). Target now has 38.74999999999999 HP
+2025-11-27 13:14:23,281 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 12.26 damage. Target now has 164.3 HP
+2025-11-27 13:14:23,281 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 12.71 damage (CRIT DMG). Target now has 26.039999999999992 HP
+2025-11-27 13:14:23,282 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 9.67 damage. Target now has 154.63000000000002 HP
+2025-11-27 13:14:23,282 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 13.08 damage (CRIT DMG). Target now has 12.959999999999992 HP
+2025-11-27 13:14:23,282 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 11.33 damage. Target now has 143.3 HP
+2025-11-27 13:14:23,282 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 14.47 damage (CRIT DMG). Target now has 0 HP
+2025-11-27 13:14:23,282 UTC | INFO | game.engine | Turn 1: Event 'enemy' occurred with value 'troll'. Player HP: 200 → 143.3
+2025-11-27 13:14:23,331 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:31,078 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:36,353 UTC | INFO | game.engine | Turn 2: player chose path with risk 'high_risk' and hint 'blood_stains'
+2025-11-27 13:14:36,388 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:36,388 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: assassin;
+hp: 20;
+attack: 16;
+speed: 12;
+loot: 5
+2025-11-27 13:14:36,388 UTC | INFO | game.gameplay.entities.entities | player attacked assassin and dealt 11.54 damage. Target now has 8.46 HP
+2025-11-27 13:14:36,388 UTC | INFO | game.gameplay.entities.entities | assassin attacked player and dealt 10.56 damage. Target now has 132.74 HP
+2025-11-27 13:14:36,388 UTC | INFO | game.gameplay.entities.entities | player attacked assassin and dealt 14.95 damage (CRIT DMG). Target now has 0 HP
+2025-11-27 13:14:36,388 UTC | INFO | game.engine | Turn 2: Event 'enemy' occurred with value 'assassin'. Player HP: 143.3 → 132.74
+2025-11-27 13:14:36,422 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:43,792 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:49,040 UTC | INFO | game.engine | Turn 3: player chose path with risk 'medium_risk' and hint 'whispers'
+2025-11-27 13:14:49,042 UTC | INFO | game.gameplay.entities.player | player put 1 of iron boots in their inventory
+2025-11-27 13:14:49,054 UTC | INFO | game.gameplay.entities.player | iron boots deleted from player's inventory because quantity reached 0
+2025-11-27 13:14:49,055 UTC | INFO | game.gameplay.equipment.player_equipment | player equipped iron boots to boots
+2025-11-27 13:14:49,055 UTC | INFO | game.gameplay.entities.player | player equipped iron boots to boots
+2025-11-27 13:14:49,055 UTC | INFO | game.engine | Turn 3: Event 'random item' occurred with value 'iron boots'. Player HP: 132.74 → 205
+2025-11-27 13:14:49,109 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:14:52,456 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:15:12,294 UTC | INFO | game.engine | Turn 4: player chose path with risk 'medium_risk' and hint 'whispers'
+2025-11-27 13:15:12,294 UTC | INFO | game.engine | Turn 4: Event 'heal' occurred with value '25'. Player HP: 205 → 230
+2025-11-27 13:15:12,333 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:15:18,405 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:15:23,430 UTC | INFO | game.engine | Turn 5: player chose path with risk 'medium_risk' and hint 'whispers'
+2025-11-27 13:15:23,430 UTC | INFO | game.gameplay.entities.player | player put 1 of swift boots in their inventory
+2025-11-27 13:15:23,431 UTC | INFO | game.engine | Turn 5: Event 'random item' occurred with value 'swift boots'. Player HP: 230 → 230
+2025-11-27 13:15:23,452 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:15:26,797 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:15:31,748 UTC | INFO | game.engine | Turn 6: player chose path with risk 'low_risk' and hint 'sunlight'
+2025-11-27 13:15:31,748 UTC | INFO | game.engine | Turn 6: Event 'heal' occurred with value '27'. Player HP: 230 → 257
+2025-11-27 13:15:31,782 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:15:37,998 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:15:42,762 UTC | INFO | game.engine | Turn 7: player chose path with risk 'medium_risk' and hint 'whispers'
+2025-11-27 13:15:42,804 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:15:42,804 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: bandit;
+hp: 37;
+attack: 11;
+speed: 15;
+loot: 3
+2025-11-27 13:15:42,808 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 11.34 damage. Target now has 25.66 HP
+2025-11-27 13:15:42,809 UTC | INFO | game.gameplay.entities.entities | bandit attacked player and dealt 12.53 damage. Target now has 244.47 HP
+2025-11-27 13:15:42,810 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 8.76 damage. Target now has 16.9 HP
+2025-11-27 13:15:42,811 UTC | INFO | game.gameplay.entities.entities | bandit attacked player and dealt 6.71 damage. Target now has 237.76 HP
+2025-11-27 13:15:42,811 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 10.26 damage. Target now has 6.639999999999999 HP
+2025-11-27 13:15:42,811 UTC | INFO | game.gameplay.entities.entities | bandit attacked player and dealt 9.07 damage. Target now has 228.69 HP
+2025-11-27 13:15:42,811 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 10.15 damage. Target now has 0 HP
+2025-11-27 13:15:42,811 UTC | INFO | game.engine | Turn 7: Event 'enemy' occurred with value 'bandit'. Player HP: 257 → 228.69
+2025-11-27 13:15:42,837 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:15:50,900 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:21:17,676 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:21:21,279 UTC | INFO | game.builder | player has been created with en language used from previous session
+2025-11-27 13:21:21,316 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:21:21,325 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-27 13:21:21,325 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-27 13:21:21,326 UTC | INFO | game.engine | player's game_loop initialized at floor 0
+2025-11-27 13:21:21,354 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:21:21,354 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-27 13:21:23,212 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:21:27,612 UTC | INFO | game.engine | Turn 1: player chose path with risk 'low_risk' and hint 'peaceful_sounds'
+2025-11-27 13:21:27,615 UTC | INFO | game.engine | Turn 1: Event 'add coins' occurred with value '40'. Player HP: 200 → 200, Floor: 0 → 0
+2025-11-27 13:21:27,639 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:21:32,330 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:21:37,477 UTC | INFO | game.engine | Turn 2: player chose path with risk 'high_risk' and hint 'foul_smell'
+2025-11-27 13:21:37,520 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:21:37,520 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: rogue;
+hp: 31;
+attack: 9;
+speed: 10;
+loot: 5
+2025-11-27 13:21:37,522 UTC | INFO | game.gameplay.entities.entities | player attacked rogue and dealt 9.46 damage. Target now has 21.54 HP
+2025-11-27 13:21:37,525 UTC | INFO | game.gameplay.entities.entities | rogue attacked player and dealt 10.5 damage. Target now has 189.5 HP
+2025-11-27 13:21:37,525 UTC | INFO | game.gameplay.entities.entities | player attacked rogue and dealt 6.5 damage. Target now has 15.04 HP
+2025-11-27 13:21:37,525 UTC | INFO | game.gameplay.entities.entities | rogue attacked player and dealt 10.0 damage. Target now has 179.5 HP
+2025-11-27 13:21:37,525 UTC | INFO | game.gameplay.entities.entities | player attacked rogue and dealt 6.79 damage. Target now has 8.25 HP
+2025-11-27 13:21:37,525 UTC | INFO | game.gameplay.entities.entities | rogue attacked player and dealt 12.68 damage (CRIT DMG). Target now has 166.82 HP
+2025-11-27 13:21:37,525 UTC | INFO | game.gameplay.entities.entities | player attacked rogue and dealt 13.57 damage (CRIT DMG). Target now has 0 HP
+2025-11-27 13:21:37,526 UTC | INFO | game.engine | Turn 2: Event 'enemy' occurred with value 'rogue'. Player HP: 200 → 166.82, Floor: 0 → 0
+2025-11-27 13:21:37,573 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:21:44,859 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:21:53,734 UTC | INFO | game.engine | Turn 3: player chose path with risk 'low_risk' and hint 'sunlight'
+2025-11-27 13:21:53,735 UTC | INFO | game.engine | Turn 3: Event 'heal' occurred with value '22'. Player HP: 166.82 → 188.82, Floor: 0 → 0
+2025-11-27 13:21:53,773 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:21:59,975 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:04,662 UTC | INFO | game.engine | Turn 4: player chose path with risk 'low_risk' and hint 'peaceful_sounds'
+2025-11-27 13:22:04,663 UTC | INFO | game.engine | Turn 4: Event 'add coins' occurred with value '18'. Player HP: 188.82 → 188.82, Floor: 0 → 0
+2025-11-27 13:22:04,682 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:09,504 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:14,421 UTC | INFO | game.engine | Turn 5: player chose path with risk 'medium_risk' and hint 'campfire'
+2025-11-27 13:22:14,463 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:14,463 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: bandit;
+hp: 33;
+attack: 10;
+speed: 20;
+loot: 4
+2025-11-27 13:22:14,464 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 6.05 damage. Target now has 26.95 HP
+2025-11-27 13:22:14,464 UTC | INFO | game.gameplay.entities.entities | bandit attacked player and dealt 6.92 damage. Target now has 181.9 HP
+2025-11-27 13:22:14,464 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 11.14 damage. Target now has 15.809999999999999 HP
+2025-11-27 13:22:14,464 UTC | INFO | game.gameplay.entities.entities | bandit attacked player and dealt 13.07 damage (CRIT DMG). Target now has 168.83 HP
+2025-11-27 13:22:14,464 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 12.21 damage (CRIT DMG). Target now has 3.599999999999998 HP
+2025-11-27 13:22:14,464 UTC | INFO | game.gameplay.entities.entities | bandit attacked player and dealt 10.69 damage. Target now has 158.14000000000001 HP
+2025-11-27 13:22:14,464 UTC | INFO | game.gameplay.entities.entities | player attacked bandit and dealt 13.25 damage (CRIT DMG). Target now has 0 HP
+2025-11-27 13:22:14,464 UTC | INFO | game.engine | Turn 5: Event 'enemy' occurred with value 'bandit'. Player HP: 188.82 → 158.14000000000001, Floor: 0 → 0
+2025-11-27 13:22:14,488 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:22,304 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:26,530 UTC | INFO | game.engine | Turn 6: player chose path with risk 'medium_risk' and hint 'merchant'
+2025-11-27 13:22:26,531 UTC | INFO | game.engine | Turn 6: Event 'floor down' occurred with value '1'. Player HP: 158.14000000000001 → 158.14000000000001, Floor: 0 → 0
+2025-11-27 13:22:26,564 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:31,890 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:36,280 UTC | INFO | game.engine | Turn 7: player chose path with risk 'medium_risk' and hint 'whispers'
+2025-11-27 13:22:36,331 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:36,332 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: orc;
+hp: 50;
+attack: 14;
+speed: 4;
+loot: 4
+2025-11-27 13:22:36,332 UTC | INFO | game.gameplay.entities.entities | player attacked orc and dealt 13.75 damage (CRIT DMG). Target now has 36.25 HP
+2025-11-27 13:22:36,332 UTC | INFO | game.gameplay.entities.entities | orc attacked player and dealt 15.91 damage. Target now has 142.23000000000002 HP
+2025-11-27 13:22:36,333 UTC | INFO | game.gameplay.entities.entities | player attacked orc and dealt 6.25 damage. Target now has 30.0 HP
+2025-11-27 13:22:36,333 UTC | INFO | game.gameplay.entities.entities | orc attacked player and dealt 8.43 damage. Target now has 133.8 HP
+2025-11-27 13:22:36,333 UTC | INFO | game.gameplay.entities.entities | player attacked orc and dealt 6.13 damage. Target now has 23.87 HP
+2025-11-27 13:22:36,333 UTC | INFO | game.gameplay.entities.entities | orc attacked player and dealt 12.0 damage. Target now has 121.80000000000001 HP
+2025-11-27 13:22:36,333 UTC | INFO | game.gameplay.entities.entities | player attacked orc and dealt 6.9 damage. Target now has 16.97 HP
+2025-11-27 13:22:36,333 UTC | INFO | game.gameplay.entities.entities | orc attacked player and dealt 16.54 damage. Target now has 105.26000000000002 HP
+2025-11-27 13:22:36,334 UTC | INFO | game.gameplay.entities.entities | player attacked orc and dealt 14.1 damage (CRIT DMG). Target now has 2.869999999999999 HP
+2025-11-27 13:22:36,334 UTC | INFO | game.gameplay.entities.entities | orc attacked player and dealt 20.58 damage (CRIT DMG). Target now has 84.68000000000002 HP
+2025-11-27 13:22:36,334 UTC | INFO | game.gameplay.entities.entities | player attacked orc and dealt 12.58 damage (CRIT DMG). Target now has 0 HP
+2025-11-27 13:22:36,334 UTC | INFO | game.engine | Turn 7: Event 'enemy' occurred with value 'orc'. Player HP: 158.14000000000001 → 84.68000000000002, Floor: 0 → 0
+2025-11-27 13:22:36,364 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:44,054 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:48,694 UTC | INFO | game.engine | Turn 8: player chose path with risk 'high_risk' and hint 'mist'
+2025-11-27 13:22:48,715 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:48,715 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: goblin;
+hp: 17;
+attack: 6;
+speed: 10;
+loot: 2
+2025-11-27 13:22:48,715 UTC | INFO | game.gameplay.entities.entities | player attacked goblin and dealt 14.33 damage (CRIT DMG). Target now has 2.67 HP
+2025-11-27 13:22:48,715 UTC | INFO | game.gameplay.entities.entities | goblin attacked player and dealt 5.03 damage. Target now has 79.65000000000002 HP
+2025-11-27 13:22:48,715 UTC | INFO | game.gameplay.entities.entities | player attacked goblin and dealt 8.1 damage. Target now has 0 HP
+2025-11-27 13:22:48,715 UTC | INFO | game.engine | Turn 8: Event 'enemy' occurred with value 'goblin'. Player HP: 84.68000000000002 → 79.65000000000002, Floor: 0 → 0
+2025-11-27 13:22:48,735 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:22:56,979 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:01,375 UTC | INFO | game.engine | Turn 9: player chose path with risk 'high_risk' and hint 'foul_smell'
+2025-11-27 13:23:01,375 UTC | INFO | game.engine | Turn 9: Event 'heal' occurred with value '33'. Player HP: 79.65000000000002 → 112.65000000000002, Floor: 0 → 0
+2025-11-27 13:23:01,416 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:07,838 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:12,961 UTC | INFO | game.engine | Turn 10: player chose path with risk 'medium_risk' and hint 'foul_smell'
+2025-11-27 13:23:12,963 UTC | INFO | game.gameplay.entities.player | player put 1 of miner hat in their inventory
+2025-11-27 13:23:12,964 UTC | INFO | game.gameplay.entities.player | miner hat deleted from player's inventory because quantity reached 0
+2025-11-27 13:23:12,964 UTC | INFO | game.gameplay.equipment.player_equipment | player equipped miner hat to helmet
+2025-11-27 13:23:12,965 UTC | INFO | game.gameplay.entities.player | player equipped miner hat to helmet
+2025-11-27 13:23:12,965 UTC | INFO | game.engine | Turn 10: Event 'random item' occurred with value 'miner hat'. Player HP: 112.65000000000002 → 221.0, Floor: 0 → 0
+2025-11-27 13:23:13,025 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:17,857 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:22,266 UTC | INFO | game.engine | Turn 11: player chose path with risk 'medium_risk' and hint 'campfire'
+2025-11-27 13:23:22,312 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:22,312 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: thief;
+hp: 26;
+attack: 9;
+speed: 25;
+loot: 1
+2025-11-27 13:23:22,312 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 9.32 damage. Target now has 16.68 HP
+2025-11-27 13:23:22,312 UTC | INFO | game.gameplay.entities.entities | thief attacked player and dealt 8.22 damage. Target now has 212.78 HP
+2025-11-27 13:23:22,312 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 6.44 damage. Target now has 10.239999999999998 HP
+2025-11-27 13:23:22,312 UTC | INFO | game.gameplay.entities.entities | thief attacked player and dealt 8.16 damage. Target now has 204.62 HP
+2025-11-27 13:23:22,312 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 8.06 damage. Target now has 2.179999999999998 HP
+2025-11-27 13:23:22,312 UTC | INFO | game.gameplay.entities.entities | thief attacked player and dealt 6.53 damage. Target now has 198.09 HP
+2025-11-27 13:23:22,313 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 11.87 damage. Target now has 0 HP
+2025-11-27 13:23:22,313 UTC | INFO | game.engine | Turn 11: Event 'enemy' occurred with value 'thief'. Player HP: 221.0 → 198.09, Floor: 0 → 0
+2025-11-27 13:23:22,347 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:30,142 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:34,254 UTC | INFO | game.engine | Turn 12: player chose path with risk 'medium_risk' and hint 'campfire'
+2025-11-27 13:23:34,255 UTC | INFO | game.engine | Turn 12: Event 'poison' occurred with value '23'. Player HP: 198.09 → 175.09, Floor: 0 → 0
+2025-11-27 13:23:34,292 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:40,564 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:45,934 UTC | INFO | game.engine | Turn 13: player chose path with risk 'high_risk' and hint 'ominous_sounds'
+2025-11-27 13:23:45,935 UTC | INFO | game.engine | Turn 13: Event 'poison' occurred with value '18'. Player HP: 175.09 → 157.09, Floor: 0 → 0
+2025-11-27 13:23:45,968 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:51,754 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:23:56,901 UTC | INFO | game.engine | Turn 14: player chose path with risk 'low_risk' and hint 'peaceful_sounds'
+2025-11-27 13:23:56,901 UTC | INFO | game.engine | Turn 14: Event 'poison' occurred with value '14'. Player HP: 157.09 → 143.09, Floor: 0 → 0
+2025-11-27 13:23:56,938 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:02,437 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:06,852 UTC | INFO | game.engine | Turn 15: player chose path with risk 'medium_risk' and hint 'whispers'
+2025-11-27 13:24:06,892 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:06,893 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: rogue;
+hp: 31;
+attack: 9;
+speed: 16;
+loot: 3
+2025-11-27 13:24:06,894 UTC | INFO | game.gameplay.entities.entities | player attacked rogue and dealt 13.59 damage (CRIT DMG). Target now has 17.41 HP
+2025-11-27 13:24:06,894 UTC | INFO | game.gameplay.entities.entities | rogue attacked player and dealt 11.24 damage (CRIT DMG). Target now has 131.85 HP
+2025-11-27 13:24:06,894 UTC | INFO | game.gameplay.entities.entities | player attacked rogue and dealt 14.84 damage (CRIT DMG). Target now has 2.5700000000000003 HP
+2025-11-27 13:24:06,894 UTC | INFO | game.gameplay.entities.entities | rogue attacked player and dealt 9.78 damage. Target now has 122.07 HP
+2025-11-27 13:24:06,894 UTC | INFO | game.gameplay.entities.entities | player attacked rogue and dealt 8.04 damage. Target now has 0 HP
+2025-11-27 13:24:06,895 UTC | INFO | game.engine | Turn 15: Event 'enemy' occurred with value 'rogue'. Player HP: 143.09 → 122.07, Floor: 0 → 0
+2025-11-27 13:24:06,922 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:14,631 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:19,349 UTC | INFO | game.engine | Turn 16: player chose path with risk 'high_risk' and hint 'blood_stains'
+2025-11-27 13:24:19,374 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:19,384 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: assassin;
+hp: 25;
+attack: 20;
+speed: 22;
+loot: 3
+2025-11-27 13:24:19,384 UTC | INFO | game.gameplay.entities.entities | player attacked assassin and dealt 14.3 damage (CRIT DMG). Target now has 10.7 HP
+2025-11-27 13:24:19,384 UTC | INFO | game.gameplay.entities.entities | assassin attacked player and dealt 21.29 damage. Target now has 100.78 HP
+2025-11-27 13:24:19,384 UTC | INFO | game.gameplay.entities.entities | player attacked assassin and dealt 14.6 damage (CRIT DMG). Target now has 0 HP
+2025-11-27 13:24:19,385 UTC | INFO | game.engine | Turn 16: Event 'enemy' occurred with value 'assassin'. Player HP: 122.07 → 100.78, Floor: 0 → 0
+2025-11-27 13:24:19,411 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:26,798 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:31,090 UTC | INFO | game.engine | Turn 17: player chose path with risk 'low_risk' and hint 'sunlight'
+2025-11-27 13:24:31,091 UTC | INFO | game.engine | Turn 17: Event 'add coins' occurred with value '11'. Player HP: 100.78 → 100.78, Floor: 0 → 0
+2025-11-27 13:24:31,122 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:35,828 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:39,759 UTC | INFO | game.engine | Turn 18: player chose path with risk 'medium_risk' and hint 'campfire'
+2025-11-27 13:24:39,760 UTC | INFO | game.engine | Turn 18: Event 'heal' occurred with value '4'. Player HP: 100.78 → 104.78, Floor: 0 → 0
+2025-11-27 13:24:39,802 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:45,659 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:50,830 UTC | INFO | game.engine | Turn 19: player chose path with risk 'low_risk' and hint 'gentle_breeze'
+2025-11-27 13:24:50,851 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:50,851 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: troll;
+hp: 74;
+attack: 13;
+speed: 2;
+loot: 8
+2025-11-27 13:24:50,851 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 8.28 damage. Target now has 65.72 HP
+2025-11-27 13:24:50,851 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 17.89 damage (CRIT DMG). Target now has 86.89 HP
+2025-11-27 13:24:50,851 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 9.3 damage. Target now has 56.42 HP
+2025-11-27 13:24:50,851 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 12.52 damage. Target now has 74.37 HP
+2025-11-27 13:24:50,852 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 8.64 damage. Target now has 47.78 HP
+2025-11-27 13:24:50,852 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 12.76 damage. Target now has 61.61000000000001 HP
+2025-11-27 13:24:50,852 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 7.67 damage. Target now has 40.11 HP
+2025-11-27 13:24:50,852 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 18.84 damage (CRIT DMG). Target now has 42.77000000000001 HP
+2025-11-27 13:24:50,852 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 7.23 damage. Target now has 32.879999999999995 HP
+2025-11-27 13:24:50,852 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 11.87 damage. Target now has 30.900000000000013 HP
+2025-11-27 13:24:50,852 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 7.74 damage. Target now has 25.139999999999993 HP
+2025-11-27 13:24:50,852 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 17.21 damage (CRIT DMG). Target now has 13.690000000000012 HP
+2025-11-27 13:24:50,852 UTC | INFO | game.gameplay.entities.entities | player attacked troll and dealt 11.0 damage. Target now has 14.139999999999993 HP
+2025-11-27 13:24:50,852 UTC | INFO | game.gameplay.entities.entities | troll attacked player and dealt 14.05 damage. Target now has 0 HP
+2025-11-27 13:24:50,852 UTC | INFO | game.engine | Turn 19: Event 'enemy' occurred with value 'troll'. Player HP: 104.78 → 0, Floor: 0 → 0
+2025-11-27 13:24:50,872 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:24:59,848 UTC | INFO | game.engine | player died on floor 0 with 0 HP
+2025-11-27 13:24:59,849 UTC | INFO | game.gameplay.entities.player | player has made their first run ever.
+Floor: 0
+Duration: 218.49430799484253
+2025-11-27 13:25:05,044 UTC | INFO | game.engine | player's run ended after 19 turns. Best floor: 0
+2025-11-27 13:25:05,065 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:25:10,934 UTC | INFO | game.builder | player has been created with en language used from previous session
+2025-11-27 13:25:10,967 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:25:10,971 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-27 13:25:10,972 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-27 13:25:10,974 UTC | INFO | game.engine | player's game_loop initialized at floor 0
+2025-11-27 13:25:11,003 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:25:11,004 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-27 13:25:12,885 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:35:05,053 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:35:16,385 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\en\config.yaml
+2025-11-27 13:35:22,131 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 13:35:24,935 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 13:35:26,940 UTC | INFO | game.builder | player has been created with fr language used from previous session
+2025-11-27 13:35:26,984 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 13:35:26,987 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-27 13:35:26,987 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-27 13:35:26,988 UTC | INFO | game.engine | player's game_loop initialized at floor 0
+2025-11-27 13:35:27,018 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 13:35:27,018 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-27 13:35:29,745 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 13:36:08,883 UTC | INFO | game.engine | Turn 1: player chose path with risk 'low_risk' and hint 'gentle_breeze'
+2025-11-27 13:36:08,945 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 13:36:08,946 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: thief;
+hp: 23;
+attack: 12;
+speed: 26;
+loot: 3
+2025-11-27 13:36:08,946 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 10.71 damage. Target now has 12.29 HP
+2025-11-27 13:36:08,946 UTC | INFO | game.gameplay.entities.entities | thief attacked player and dealt 9.28 damage. Target now has 190.72 HP
+2025-11-27 13:36:08,946 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 6.46 damage. Target now has 5.829999999999999 HP
+2025-11-27 13:36:08,946 UTC | INFO | game.gameplay.entities.entities | thief attacked player and dealt 12.82 damage. Target now has 177.9 HP
+2025-11-27 13:36:08,946 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 14.53 damage (CRIT DMG). Target now has 0 HP
+2025-11-27 13:36:08,946 UTC | INFO | game.engine | Turn 1: Event 'enemy' occurred with value 'thief'. Player HP: 200 → 177.9, Floor: 0 → 0
+2025-11-27 13:36:09,030 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 13:36:18,915 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:01:37,042 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:01:42,017 UTC | INFO | game.builder | player has been created with fr language used from previous session
+2025-11-27 19:01:42,043 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:01:42,048 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-27 19:01:42,048 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-27 19:01:42,049 UTC | INFO | game.engine | player's game_loop initialized at floor 0
+2025-11-27 19:01:42,072 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:01:42,072 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-27 19:01:44,128 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:01:45,215 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:01:46,452 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:01:47,659 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:01:52,043 UTC | INFO | game.engine | Turn 1: player chose path with risk 'low_risk' and hint 'gentle_breeze'
+2025-11-27 19:01:52,052 UTC | INFO | game.engine | Turn 1: Event 'add coins' occurred with value '32'. Player HP: 200 → 200, Floor: 0 → 0
+2025-11-27 19:01:52,078 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:01:54,222 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:01:58,470 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:01:59,635 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:00,865 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:01,980 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:03,766 UTC | INFO | game.engine | Turn 2: player chose path with risk 'low_risk' and hint 'peaceful_sounds'
+2025-11-27 19:02:03,826 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:03,827 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: dragon;
+hp: 103;
+attack: 27;
+speed: 15;
+loot: 12
+2025-11-27 19:02:03,827 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 9.35 damage. Target now has 93.65 HP
+2025-11-27 19:02:03,827 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 29.03 damage. Target now has 170.97 HP
+2025-11-27 19:02:03,827 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 10.19 damage. Target now has 83.46000000000001 HP
+2025-11-27 19:02:03,827 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 21.42 damage. Target now has 149.55 HP
+2025-11-27 19:02:03,827 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 7.14 damage. Target now has 76.32000000000001 HP
+2025-11-27 19:02:03,827 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 28.27 damage. Target now has 121.28000000000002 HP
+2025-11-27 19:02:03,827 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 6.42 damage. Target now has 69.9 HP
+2025-11-27 19:02:03,828 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 31.08 damage. Target now has 90.20000000000002 HP
+2025-11-27 19:02:03,828 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 12.47 damage (CRIT DMG). Target now has 57.43000000000001 HP
+2025-11-27 19:02:03,828 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 27.94 damage. Target now has 62.26000000000002 HP
+2025-11-27 19:02:03,828 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 11.31 damage. Target now has 46.120000000000005 HP
+2025-11-27 19:02:03,828 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 33.7 damage (CRIT DMG). Target now has 28.560000000000016 HP
+2025-11-27 19:02:03,828 UTC | INFO | game.gameplay.entities.entities | player attacked dragon and dealt 12.48 damage (CRIT DMG). Target now has 33.64 HP
+2025-11-27 19:02:03,828 UTC | INFO | game.gameplay.entities.entities | dragon attacked player and dealt 36.22 damage (CRIT DMG). Target now has 0 HP
+2025-11-27 19:02:03,828 UTC | INFO | game.engine | Turn 2: Event 'enemy' occurred with value 'dragon'. Player HP: 200 → 0, Floor: 1 → 1
+2025-11-27 19:02:03,860 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:08,557 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:12,238 UTC | INFO | game.engine | player died on floor 2 with 0 HP
+2025-11-27 19:02:12,239 UTC | INFO | game.gameplay.entities.player | player has made their first run ever.
+Floor: 2
+Duration: 30.166510581970215
+2025-11-27 19:02:17,927 UTC | INFO | game.engine | player's run ended after 2 turns. Best floor: 2
+2025-11-27 19:02:17,950 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:20,739 UTC | INFO | game.builder | player has been created with fr language used from previous session
+2025-11-27 19:02:20,781 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:20,782 UTC | INFO | game.gameplay.entities.player | player has been created with the following stats:
+200
+10
+10
+Equipment: {'weapon': None, 'helmet': None, 'chest': None, 'boots': None, 'wings': None}
+2025-11-27 19:02:20,782 UTC | INFO | game.builder | player has been initialized with:
+200 health;
+10 attack;
+10 speed
+2025-11-27 19:02:20,785 UTC | INFO | game.engine | player's game_loop initialized at floor 0
+2025-11-27 19:02:20,822 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:20,822 UTC | INFO | game.gameplay.entities.player | time started for player
+2025-11-27 19:02:22,831 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:24,410 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:25,649 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:26,793 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:28,554 UTC | INFO | game.engine | Turn 1: player chose path with risk 'high_risk' and hint 'mist'
+2025-11-27 19:02:28,556 UTC | INFO | game.gameplay.entities.player | player put 1 of leather boots in their inventory
+2025-11-27 19:02:28,559 UTC | INFO | game.gameplay.entities.player | leather boots deleted from player's inventory because quantity reached 0
+2025-11-27 19:02:28,559 UTC | INFO | game.gameplay.equipment.player_equipment | player equipped leather boots to boots
+2025-11-27 19:02:28,559 UTC | INFO | game.gameplay.entities.player | player equipped leather boots to boots
+2025-11-27 19:02:28,559 UTC | INFO | game.engine | Turn 1: Event 'random item' occurred with value 'leather boots'. Player HP: 200 → 200, Floor: 0 → 0
+2025-11-27 19:02:28,591 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:30,274 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:34,845 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:35,904 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:37,195 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:38,301 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:39,917 UTC | INFO | game.engine | Turn 2: player chose path with risk 'medium_risk' and hint 'merchant'
+2025-11-27 19:02:39,918 UTC | INFO | game.engine | Turn 2: Event 'add coins' occurred with value '12'. Player HP: 200 → 200, Floor: 1 → 1
+2025-11-27 19:02:39,959 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:41,711 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:45,949 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:46,953 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:48,246 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:49,470 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:51,938 UTC | INFO | game.engine | Turn 3: player chose path with risk 'high_risk' and hint 'foul_smell'
+2025-11-27 19:02:51,983 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:51,984 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: skeleton;
+hp: 23;
+attack: 12;
+speed: 9;
+loot: 3
+2025-11-27 19:02:51,984 UTC | INFO | game.gameplay.entities.entities | player attacked skeleton and dealt 9.01 damage. Target now has 13.99 HP
+2025-11-27 19:02:51,985 UTC | INFO | game.gameplay.entities.entities | skeleton attacked player and dealt 9.2 damage. Target now has 190.8 HP
+2025-11-27 19:02:51,985 UTC | INFO | game.gameplay.entities.entities | player attacked skeleton and dealt 8.03 damage. Target now has 5.960000000000001 HP
+2025-11-27 19:02:51,986 UTC | INFO | game.gameplay.entities.entities | skeleton attacked player and dealt 7.32 damage. Target now has 183.48000000000002 HP
+2025-11-27 19:02:51,986 UTC | INFO | game.gameplay.entities.entities | player attacked skeleton and dealt 7.09 damage. Target now has 0 HP
+2025-11-27 19:02:51,987 UTC | INFO | game.engine | Turn 3: Event 'enemy' occurred with value 'skeleton'. Player HP: 200 → 183.48000000000002, Floor: 2 → 2
+2025-11-27 19:02:52,035 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:02:57,123 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:00,998 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:02,111 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:03,161 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:04,395 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:06,547 UTC | INFO | game.engine | Turn 4: player chose path with risk 'low_risk' and hint 'gentle_breeze'
+2025-11-27 19:03:06,547 UTC | INFO | game.engine | Turn 4: Event 'add coins' occurred with value '38'. Player HP: 183.48000000000002 → 183.48000000000002, Floor: 3 → 3
+2025-11-27 19:03:06,571 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:08,475 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:12,110 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:13,098 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:14,285 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:15,323 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:17,021 UTC | INFO | game.engine | Turn 5: player chose path with risk 'high_risk' and hint 'gentle_breeze'
+2025-11-27 19:03:17,021 UTC | INFO | game.gameplay.entities.player | player put 1 of chainmail armor in their inventory
+2025-11-27 19:03:17,022 UTC | INFO | game.gameplay.entities.player | chainmail armor deleted from player's inventory because quantity reached 0
+2025-11-27 19:03:17,022 UTC | INFO | game.gameplay.equipment.player_equipment | player equipped chainmail armor to chest
+2025-11-27 19:03:17,022 UTC | INFO | game.gameplay.entities.player | player equipped chainmail armor to chest
+2025-11-27 19:03:17,022 UTC | INFO | game.engine | Turn 5: Event 'random item' occurred with value 'chainmail armor'. Player HP: 183.48000000000002 → 240.0, Floor: 4 → 4
+2025-11-27 19:03:17,134 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:19,166 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:22,788 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:23,732 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:24,623 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:25,534 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:27,375 UTC | INFO | game.engine | Turn 6: player chose path with risk 'medium_risk' and hint 'merchant'
+2025-11-27 19:03:27,376 UTC | INFO | game.gameplay.entities.player | player put 1 of knight helmet in their inventory
+2025-11-27 19:03:27,376 UTC | INFO | game.gameplay.entities.player | knight helmet deleted from player's inventory because quantity reached 0
+2025-11-27 19:03:27,376 UTC | INFO | game.gameplay.equipment.player_equipment | player equipped knight helmet to helmet
+2025-11-27 19:03:27,376 UTC | INFO | game.gameplay.entities.player | player equipped knight helmet to helmet
+2025-11-27 19:03:27,376 UTC | INFO | game.engine | Turn 6: Event 'random item' occurred with value 'knight helmet'. Player HP: 240.0 → 432.0, Floor: 5 → 5
+2025-11-27 19:03:27,398 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:29,452 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:33,082 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:34,185 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:35,230 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:36,329 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:38,539 UTC | INFO | game.engine | Turn 7: player chose path with risk 'low_risk' and hint 'gut_feeling'
+2025-11-27 19:03:38,539 UTC | INFO | game.engine | Turn 7: Event 'heal' occurred with value '21'. Player HP: 432.0 → 200, Floor: 6 → 6
+2025-11-27 19:03:38,565 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:41,540 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:45,493 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:46,373 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:47,546 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:48,537 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:51,804 UTC | INFO | game.engine | Turn 8: player chose path with risk 'high_risk' and hint 'ominous_sounds'
+2025-11-27 19:03:51,805 UTC | INFO | game.engine | Turn 8: Event 'poison' occurred with value '13'. Player HP: 200 → 187, Floor: 7 → 7
+2025-11-27 19:03:51,865 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:54,230 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:58,125 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:59,088 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:03:59,969 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:01,102 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:02,702 UTC | INFO | game.engine | Turn 9: player chose path with risk 'medium_risk' and hint 'whispers'
+2025-11-27 19:04:02,702 UTC | INFO | game.gameplay.entities.player | player put 1 of leather armor in their inventory
+2025-11-27 19:04:02,702 UTC | INFO | game.engine | Turn 9: Event 'random item' occurred with value 'leather armor'. Player HP: 187 → 187, Floor: 8 → 8
+2025-11-27 19:04:02,743 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:04,469 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:08,030 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:09,608 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:10,743 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:11,921 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:14,395 UTC | INFO | game.engine | Turn 10: player chose path with risk 'medium_risk' and hint 'lost_child'
+2025-11-27 19:04:14,418 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:14,418 UTC | INFO | game.gameplay.entities.enemies | enemy with scaled stats has been created with following stats:
+name: thief;
+hp: 22;
+attack: 14;
+speed: 9;
+loot: 1
+2025-11-27 19:04:14,418 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 14.85 damage (CRIT DMG). Target now has 7.15 HP
+2025-11-27 19:04:14,418 UTC | INFO | game.gameplay.entities.entities | thief attacked player and dealt 20.69 damage (CRIT DMG). Target now has 166.31 HP
+2025-11-27 19:04:14,418 UTC | INFO | game.gameplay.entities.entities | player attacked thief and dealt 7.88 damage. Target now has 0 HP
+2025-11-27 19:04:14,418 UTC | INFO | game.engine | Turn 10: Event 'enemy' occurred with value 'thief'. Player HP: 187 → 166.31, Floor: 9 → 9
+2025-11-27 19:04:14,447 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:19,788 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:19,789 UTC | INFO | game.builder | Milestone reached at floor 10. Reward: 37 coins
+2025-11-27 19:04:23,638 UTC | INFO | game.engine | player reached milestone floor 10 and gained 37 coins
+2025-11-27 19:04:27,690 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:28,891 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:29,845 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
+2025-11-27 19:04:30,758 UTC | INFO | game.config.loader | Configuration loaded successfully from C:\Users\Eleve\Desktop\simple_backend\game\config\fr\config.yaml
