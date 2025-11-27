@@ -1,1 +1,0 @@
-#runs automatically when uvicorn is triggered 

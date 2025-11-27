@@ -1,1 +1,0 @@
-#returns data to fastapi
